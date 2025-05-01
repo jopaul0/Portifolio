@@ -6,6 +6,7 @@
     width: 350px;
     height: 100vh;
     background-color: #FEBD2F;
+    box-shadow: 0 0 35px #FEBD2F;
     z-index: 1000;
     transform: translateX(-120%);
     transition: transform 0.5s ease;

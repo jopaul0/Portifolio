@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #001631;
+    background-image: url('../assets/background.png');
 }
 
 header {
