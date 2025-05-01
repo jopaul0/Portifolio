@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Paulo - Desenvolvedor Fullstack</title>
-    <link rel="icon" href="./assets/logo_white.svg" type="image/png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>João Paulo - Desenvolvedor Fullstack</title>
+        <link rel="icon" href="./assets/logo_white.svg" type="image/png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/sidebar.css">
-</head>
-<body>
-    <header>
-        <figure id="logo-header">
-            <img src="./assets/logo.svg" alt="Logo - João Paulo">
-        </figure>
-    </header>
-    <aside>
-        <nav id="sidebar">
-            <ul>
-                <li><a href="#"><img src="./assets/logo.svg" alt="Logo - João Paulo"></a></li>
-                <li><a href="#">X Início</a></li>
-                <li><a href="#">X Sobre</a></li>
-                <li><a href="#">X Serviços</a></li>
-                <li><a href="#">X Projetos</a></li>
-                <li><a href="#">X Skills</a></li>
-                <li><a href="#">X Contato</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <main></main>
-    <footer></footer>
-</body>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="stylesheet" href="./style/sidebar.css">
+
+        <!-- Bibliotecas -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+            rel="stylesheet">
+
+        <!-- Scripts -->
+         <script src="./src/sidebar.js" type="module"></script>
+
+    </head>
+    <body>
+        <header>
+            <figure id="logo-header">
+                <img src="./assets/logo.svg" alt="Logo - João Paulo"
+                    class="logo">
+            </figure>
+        </header>
+        <aside>
+            <nav id="sidebar">
+                <ul>
+                    <li><figure><a href="#"><img src="./assets/logo.svg"
+                                    alt="Logo - João Paulo"
+                                    class="logo"></a></figure></li>
+                    <li><a href="#" class="nav-link"><i class="ri-home-line"></i>
+                            Início</a></li>
+                    <li><a href="#" class="nav-link"><i
+                                class="ri-information-line"></i> Sobre</a></li>
+                    <li><a href="#" class="nav-link"><i
+                                class="ri-info-card-line"></i> Serviços</a></li>
+                    <li><a href="#" class="nav-link"><i
+                                class="ri-folder-line"></i> Projetos</a></li>
+                    <li><a href="#" class="nav-link"><i
+                                class="ri-lightbulb-line"></i> Skills</a></li>
+                    <li><a href="#" class="nav-link"><i
+                                class="ri-contacts-line"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main></main>
+        <footer></footer>
+    </body>
 </html>

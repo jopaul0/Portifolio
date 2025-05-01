@@ -1,24 +1,7 @@
 /* Sidebar styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
-/*Logos*/
-#logo-header img{
-    width: auto;
-    height: 10vh;
-
-}
-
-#logo-header img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-#sidebar ul li a img{
-    width: auto;
-    height: 25vh;
-}
-
-#sidebar{
+#sidebar {
     position: absolute;
     width: 350px;
     height: 98vh;
@@ -27,19 +10,76 @@
     border: solid 1px #FEBD2F;
     z-index: 1000;
     margin: 1vh;
+    transform: translateX(-120%);
+    transition: transform 0.5s ease;
 }
 
-ul{
+#sidebar.active {
+    transform: translateX(0);
+}
+
+/*Logos*/
+#logo-header img {
+    width: auto;
+    height: 10vh;
+}
+
+#sidebar ul li figure a img {
+    width: auto;
+    height: 25vh;
+
+}
+
+.logo {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/*Links*/
+#sidebar ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
-    padding: ;
+    gap: 1vh;
 }
 
-li{
-    width: 100%;
-    text-align: center;
+#sidebar ul li {
     margin: 0 1vh 0 1vh;
+    position: relative;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 1vh 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    border-radius: 5px;
+    text-indent: 5vh;
+    transition: all 0.2s ease;
+}
+
+.nav-link i {
+    font-weight: 400 !important;
+}
+
+.nav-link:hover {
+    background-color: #000F1D;
+    color: #FEBD2F;
+}
+
+#sidebar ul li figure {
+    text-align: center;
 }
