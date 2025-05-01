@@ -108,9 +108,7 @@
         background-color: #FEBD2F;
         box-shadow: 10 0px 10px rgba(0, 0, 0, 0.2);
         transform: translateX(0);
-        /* Garante que fique visível no mobile */
-        display: flex;
-        justify-content: space-around;
+        text-align: center;
         align-items: center;
         padding: 0;
         z-index: 1000;
