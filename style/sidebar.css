@@ -1,0 +1,45 @@
+/* Sidebar styles */
+
+/*Logos*/
+#logo-header img{
+    width: auto;
+    height: 10vh;
+
+}
+
+#logo-header img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#sidebar ul li a img{
+    width: auto;
+    height: 25vh;
+}
+
+#sidebar{
+    position: absolute;
+    width: 350px;
+    height: 98vh;
+    background-color: #001C35;
+    border-radius: 5px;
+    border: solid 1px #FEBD2F;
+    z-index: 1000;
+    margin: 1vh;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: ;
+}
+
+li{
+    width: 100%;
+    text-align: center;
+    margin: 0 1vh 0 1vh;
+}
