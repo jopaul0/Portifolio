@@ -4,12 +4,9 @@
 #sidebar {
     position: absolute;
     width: 350px;
-    height: 98vh;
-    background-color: #001C35;
-    border-radius: 5px;
-    border: solid 1px #FEBD2F;
+    height: 100vh;
+    background-color: #FEBD2F;
     z-index: 1000;
-    margin: 1vh;
     transform: translateX(-120%);
     transition: transform 0.5s ease;
 }
