@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 #home {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
     display: flex;
-    align-items: center;
-    overflow: hidden !important;
 }
 
 /* CONTEÚDO PRINCIPAL */

@@ -1,16 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const sidebar = document.querySelector('#sidebar');
     const logos = document.querySelectorAll('.logo');
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-    logos.forEach(function(logo) {
-        logo.addEventListener('click', function(event) {
+    logos.forEach(function (logo) {
+        logo.addEventListener('click', function (event) {
             event.stopPropagation(); // Impede que o clique no logo feche o sidebar
             sidebar.classList.toggle('active');
         });
     });
 
     // Fecha a barra lateral ao clicar fora dela
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         // Verifica se o clique foi fora da sidebar
         if (!sidebar.contains(event.target)) {
             sidebar.classList.remove('active');
@@ -18,7 +20,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Previne que o clique dentro da sidebar feche ela
-    sidebar.addEventListener('click', function(event) {
+    sidebar.addEventListener('click', function (event) {
         event.stopPropagation();
     });
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+    
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 2) {
+                current = section.getAttribute("id");
+            }
+        });
+    
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
+            }
+        });
+    });
 });
+
+
