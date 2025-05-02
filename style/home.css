@@ -9,7 +9,7 @@
     overflow: hidden !important;
 }
 
-
+/* CONTEÚDO PRINCIPAL */
 #home div {
     position: absolute;
     width: 50vw;
@@ -22,6 +22,7 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -38,6 +39,7 @@
     font-weight: 550;
     font-size: 4vw;
 }
+
 #home div h2 {
     color: #ffffff;
     text-align: center;
@@ -45,53 +47,100 @@
     font-size: 3vw;
 }
 
-
-#home-img{
+/* IMAGEM */
+#home-img {
     width: 100%;
     display: flex;
     justify-content: end;
 }
-#home-img img{
+
+#home-img img {
     width: auto;
     height: 150vh;
     object-fit: cover;
     object-position: center;
-    transform: translate(20vw,30vh);
+    transform: translate(20vw, 30vh);
     filter: drop-shadow(0 0 5px #000000);
 }
 
+/* === MEDIA QUERIES === */
 
+/* Dispositivos até 768px */
 @media (max-width: 768px) {
-    #home-img{
-        display: none;
-    }
     #home {
-        height: 60vh;
+        min-height: 60vh;
         padding-top: 5vh;
+        flex-direction: column;
     }
+
     #home div {
+        position: relative;
         width: 80%;
-        max-width: 100%;
+        margin: 10vw auto;
+        padding: 1rem;
     }
+
     #home div p {
         font-size: 3vw;
     }
+
     #home div h1 {
         font-size: 6vw;
     }
+
     #home div h2 {
         font-size: 4vw;
     }
+
+    #home-img {
+        display: none;
+    }
 }
+
+/* Dispositivos menores, até 550px */
 @media (max-width: 550px) {
     #home {
-        height: 40vh;
+        min-height: 50vh;
         padding-top: 5vh;
     }
 
     #home div {
         width: 80%;
-        height: 80%;
+        height: auto;
         gap: 1rem;
+        padding: 5vh;
+    }
+}
+
+/* Tablets em modo retrato */
+@media (orientation: portrait) and (max-width: 1024px) {
+    #home {
+        flex-direction: column;
+        min-height: auto;
+        padding: 5vh 0;
+    }
+
+    #home div {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    #home div h1 {
+        font-size: 6vw;
+    }
+
+    #home div h2 {
+        font-size: 4.5vw;
+    }
+
+    #home div p {
+        font-size: 4vw;
+    }
+
+    #home-img {
+        display: none;
     }
 }
