@@ -66,7 +66,7 @@
 /* Até 768px */
 @media (max-width: 768px) {
     #home {
-        height: 60vh;
+        height: 50vh;
         padding-top: 2.5vh;
         flex-direction: column;
         justify-content: center;
@@ -115,7 +115,7 @@
 @media (orientation: portrait) and (max-width: 1024px) {
     #home {
         flex-direction: column;
-        height: 60vh;
+        height: 50vh;
         padding: 5vh 0;
         justify-content: center;
     }
