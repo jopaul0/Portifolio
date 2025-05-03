@@ -1,69 +1,101 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    scroll-behavior: smooth;
+  height: 100%;
+  scroll-behavior: smooth;
+  animation: MainSlideIn 0.5s ease-out;
+  animation-delay: 0.1s;
 }
 
 body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #001631;
-    background-image: url('../assets/background.svg');
-    scroll-behavior: smooth;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #001631;
+  background-image: url('../assets/background.svg');
+  scroll-behavior: smooth;
+  animation: slideIn 1s ease-out;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    height: 20vh;
-    background: linear-gradient(to bottom, #000f1d9c, #12121200); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 20vh;
+  background: linear-gradient(to bottom, #000f1d9c, #12121200);
 }
 
-section{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    overflow: hidden !important;
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  overflow: hidden !important;
 }
 
 
-#logo-header{
-    height: auto;
-    width: auto;
-    margin: 2vh 0 0 2vw;
+#logo-header {
+  height: auto;
+  width: auto;
+  margin: 2vh 0 0 2vw;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fffc6186;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFC61;
+  box-shadow: 0 0 20px #FFFC61;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fffc34;
+  box-shadow: 0 0 20px #fffc34;
+}
+
+/* === ANIMAÇÃO === */
+@keyframes MainSlideIn {
+  0% {
+    transform: scale(0.2);
+    /* Começa pequena */
+    opacity: 0;
+    /* Começa invisível */
+    filter: blur(10px);
+    /* Começa desfocada */
   }
 
-  ::-webkit-scrollbar-track {
-    background-color: #fffc6186;
+  50% {
+    transform: scale(1.05);
+    /* Cresce um pouco */
+    opacity: 0.5;
+    /* Meia opacidade */
+    filter: blur(5px);
+    /* Menos desfocada */
   }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #FFFC61;
-    box-shadow: 0 0 20px #FFFC61;
-    transition: all 0.3s ease;
+
+  100% {
+    transform: scale(1);
+    /* Tamanho final */
+    opacity: 1;
+    /* Totalmente visível */
+    filter: blur(0);
+    /* Sem desfoque */
   }
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #fffc34;
-    box-shadow: 0 0 20px #fffc34;
-  }
+}
