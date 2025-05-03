@@ -8,12 +8,14 @@
     flex-direction: row;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 #services-inner {
     flex-grow: 1;
     flex-shrink: 1;
-    width: 100% !important;
+    width: 100%;
+    max-width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -37,6 +39,7 @@
             /* canto inferior esquerdo */
             0% calc(100% - 40px),
             0% 40px);
+    
 }
 
 #services-inner h2 {
@@ -83,9 +86,6 @@
         height: 50vh;
     }
 
-    #services-wrapper {
-        max-width: 100%;
-    }
 
     #services-inner {
         padding: 1.5rem;
@@ -99,9 +99,6 @@
         padding: 2rem;
     }
 
-    #services-wrapper {
-        max-width: 100%;
-    }
 
     #services-inner {
         padding: 1rem;
