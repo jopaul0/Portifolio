@@ -55,7 +55,6 @@
     object-fit: cover;
     object-position: center;
     transform: translate(20vw, 30vh);
-    filter: drop-shadow(0 0 5px #000000);
 }
 
 /* === MEDIA QUERIES === */
