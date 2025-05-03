@@ -131,6 +131,9 @@
 }
 
 @media (max-width: 768px) {
+    .nav-link:hover::after {
+        width: 0%;
+    }
     .logo {
         display: none;
     }

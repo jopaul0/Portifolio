@@ -94,7 +94,7 @@
 @media (max-width: 768px) {
     #about {
         flex-direction: row;
-        height: 45vh;
+        height: 50vh;
     }
     .about-inner{
         padding: 0.5rem;
@@ -116,7 +116,7 @@
 @media (orientation: portrait) and (max-width: 1024px) {
     #about {
         flex-direction: row;
-        height: 45vh;
+        height: 50vh;
     }
     .about-inner{
         padding: 0.5rem;
