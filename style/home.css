@@ -63,15 +63,15 @@
 /* Dispositivos até 768px */
 @media (max-width: 768px) {
     #home {
-        min-height: 60vh;
-        padding-top: 5vh;
+        height: 60vh;
+        padding-top: 2.5vh;
         flex-direction: column;
     }
 
     #home div {
         position: relative;
         width: 80%;
-        margin: 10vw auto;
+        margin: 0 auto;
         padding: 1rem;
     }
 
@@ -95,7 +95,7 @@
 /* Dispositivos menores, até 550px */
 @media (max-width: 550px) {
     #home {
-        min-height: 50vh;
+        height: 50vh;
         padding-top: 5vh;
     }
 
@@ -111,7 +111,7 @@
 @media (orientation: portrait) and (max-width: 1024px) {
     #home {
         flex-direction: column;
-        min-height: auto;
+        height: 60vh;
         padding: 5vh 0;
     }
 
