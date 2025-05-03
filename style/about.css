@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+/* === ABOUT === */
 #about {
     position: relative;
     height: 75vh;
@@ -7,14 +10,13 @@
     flex-direction: row;
     overflow: hidden;
     box-shadow: 0 0 20px #FEBD2F;
-    /* Faz o recorte nos cantos */
-
 }
-.about-inner{
+
+/* === CONTEÚDO INTERNO === */
+.about-inner {
     height: 100%;
     width: 50%;
     padding: 2rem;
-    
 }
 
 .about-inner div {
@@ -31,13 +33,12 @@
     gap: 1rem;
     overflow-x: hidden;
     overflow-y: auto;
-    /* Permite rolagem se necessário */
     background-color: #ffc955;
     clip-path: polygon(40px 0%, 100% 0%, 100% calc(100% - 40px),
             calc(100% - 40px) 100%, 0% 100%, 0% 40px);
-
 }
 
+/* === FIGURA INTERNA === */
 .about-inner figure {
     width: 100%;
     height: 100%;
@@ -48,14 +49,11 @@
     background-image: url('../assets/me.jpg');
     background-size: cover;
     background-position: top center;
-    
-    
     clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px,
             100% 100%, 40px 100%, 0% calc(100% - 40px));
 }
 
-
-
+/* === PARÁGRAFO === */
 .about-inner div article p {
     color: #ffffff;
     font-weight: 550;
@@ -63,11 +61,10 @@
     text-indent: 1em;
     text-align: justify;
     max-height: 60%;
-    /* Limita a altura do parágrafo */
     overflow-y: auto;
-    /* Permite rolagem dentro do parágrafo */
 }
 
+/* === TÍTULOS === */
 .about-inner div h2 {
     color: #ffffff;
     text-align: center;
@@ -75,8 +72,7 @@
     font-size: clamp(1.8rem, 4vw, 3rem);
 }
 
-
-
+/* === IMAGEM INTERNA === */
 .about-inner div img {
     width: 100%;
     height: 100%;
@@ -90,19 +86,20 @@
     transition: transform 0.3s ease;
 }
 
-/* Responsividade para tablets */
+/* === RESPONSIVIDADE === */
+
+/* Tablets */
 @media (max-width: 768px) {
     #about {
-        flex-direction: row;
         height: 50vh;
     }
-    .about-inner{
+    .about-inner {
         padding: 0.5rem;
         width: 100%;
     }
 }
 
-/* Responsividade para celulares */
+/* Celulares */
 @media (max-width: 480px) {
     .about-inner div article p {
         font-size: clamp(1rem, 4vw, 1.4rem);
@@ -113,12 +110,12 @@
     }
 }
 
+/* Modo retrato em tablets */
 @media (orientation: portrait) and (max-width: 1024px) {
     #about {
-        flex-direction: row;
         height: 50vh;
     }
-    .about-inner{
+    .about-inner {
         padding: 0.5rem;
         width: 100%;
     }

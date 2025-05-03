@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
+/* === ELEMENTO PRINCIPAL === */
 #home {
     display: flex;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* === CONTEÚDO PRINCIPAL === */
 #home div {
     position: absolute;
     width: 50vw;
@@ -21,28 +22,31 @@
     gap: 2rem;
 }
 
+#home div h1,
+#home div h2,
 #home div p {
-    color: #ffffff;
-    text-indent: 5vw;
     font-weight: 550;
-    font-size: 1.5vw;
+    text-align: center;
 }
 
 #home div h1 {
     color: #001631;
-    text-align: center;
-    font-weight: 550;
     font-size: 4vw;
 }
 
 #home div h2 {
     color: #ffffff;
-    text-align: center;
-    font-weight: 550;
     font-size: 3vw;
 }
 
-/* IMAGEM */
+#home div p {
+    color: #ffffff;
+    text-indent: 5vw;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+/* === IMAGEM === */
 #home-img {
     width: 100%;
     display: flex;
@@ -59,12 +63,13 @@
 
 /* === MEDIA QUERIES === */
 
-/* Dispositivos até 768px */
+/* Até 768px */
 @media (max-width: 768px) {
     #home {
         height: 60vh;
         padding-top: 2.5vh;
         flex-direction: column;
+        justify-content: center;
     }
 
     #home div {
@@ -72,10 +77,6 @@
         width: 80%;
         margin: 0 auto;
         padding: 1rem;
-    }
-
-    #home div p {
-        font-size: 3vw;
     }
 
     #home div h1 {
@@ -86,12 +87,16 @@
         font-size: 4vw;
     }
 
+    #home div p {
+        font-size: 3vw;
+    }
+
     #home-img {
         display: none;
     }
 }
 
-/* Dispositivos menores, até 550px */
+/* Até 550px */
 @media (max-width: 550px) {
     #home {
         height: 50vh;
@@ -112,6 +117,7 @@
         flex-direction: column;
         height: 60vh;
         padding: 5vh 0;
+        justify-content: center;
     }
 
     #home div {

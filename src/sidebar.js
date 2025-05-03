@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener("scroll", () => {
         let current = "";
-    
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 current = section.getAttribute("id");
             }
         });
-    
+
         navLinks.forEach(link => {
             link.classList.remove("active");
             if (link.getAttribute("href") === "#" + current) {
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
 });
 
 
