@@ -1,5 +1,6 @@
 /* === ELEMENTO PRINCIPAL === */
 #home {
+    height: 100vh;
     display: flex;
 }
 

@@ -7,7 +7,7 @@
 
 #projects-inner {
     width: 70%;
-    height: 60%;
+    height: 60vh;
     text-align: center;
     padding: 2rem;
     background-color: #FEBD2F;
@@ -43,11 +43,17 @@
     font-size: clamp(1.35rem, 3vw, 2.25rem);
 }
 
-#projects-content h4 {
+#projects-content a {
+    text-decoration: none;
     color: #ffffff;
     font-weight: 550;
     font-size: clamp(1.35rem, 3vw, 2.25rem);
+    transition: all 0.3s ease;
 }
+#projects-content a:hover {
+    text-shadow: 0 0 20px #ffffff;
+}
+
 
 #projects-content p {
     color: #ffffff;
@@ -173,4 +179,68 @@
     height: auto;
     min-height: 300px;
     /* ajuste conforme o tamanho dos vídeos */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+
+    .project-tab {
+        width: 100%;
+        height: auto;
+    }
+
+    #carousel-container iframe{
+        height: 100%;
+    }
+
+    #carousel-videos iframe {
+        height: 300px;
+    }
+
+    #projects-inner {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #projects-inner h2,
+    #projects-content h3,
+    #projects-content h4,
+    #projects-content p {
+        text-align: center;
+    }
+
+    #projects-content article {
+        padding: 0.5rem;
+    }
+
+    #controls {
+        z-index: 1000;
+        padding: 0 1rem;
+    }
+
+    #controls button {
+        padding: 1rem;
+    }
+    #controls button {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #projects-inner {
+        padding: 1rem 0.5rem;
+    }
+
+    #projects-content p {
+        font-size: 0.95rem;
+    }
+
+    #projects-content h4 {
+        font-size: 1.2rem;
+    }
+
+    
 }
