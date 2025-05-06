@@ -1,217 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>João Paulo - Desenvolvedor Fullstack</title>
-        <link rel="icon" href="./assets/images/logo_white.svg" type="image/png">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="./style/main.css">
-        <link rel="stylesheet" href="./style/sidebar.css">
-        <link rel="stylesheet" href="./style/home.css">
-        <link rel="stylesheet" href="./style/about.css">
-        <link rel="stylesheet" href="./style/services.css">
-        <link rel="stylesheet" href="./style/projects.css">
-        <link rel="stylesheet" href="./style/skills.css">
-        <link rel="stylesheet" href="./style/contact.css">
-        <link rel="stylesheet" href="./style/footer.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Paulo - Desenvolvedor Fullstack</title>
+    <link rel="icon" href="./assets/images/logo_white.svg" type="image/png">
 
-        <!-- Bibliotecas -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-            rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/services.css">
+    <link rel="stylesheet" href="./style/projects.css">
+    <link rel="stylesheet" href="./style/skills.css">
+    <link rel="stylesheet" href="./style/certificates.css">
+    <link rel="stylesheet" href="./style/footer.css">
 
-        <!-- Scripts -->
-        <script src="./script/sidebar.js" type="module"></script>
-        <script src="./script/carousel.js" type="module"></script>
+    <!-- Bibliotecas -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
-    </head>
-    <body>
-        <header>
-            <figure id="logo-header">
-                <img src="./assets/images/logo.svg" alt="Logo - João Paulo"
-                    class="logo">
+    <!-- Scripts -->
+    <script src="./script/sidebar.js" type="module"></script>
+    <script src="./script/carousel.js" type="module"></script>
+
+</head>
+
+<body>
+    <header>
+        <figure id="logo-header">
+            <img src="./assets/images/logo.svg" alt="Logo - João Paulo" class="logo">
+        </figure>
+    </header>
+    <aside>
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <figure><a href="#"><img src="./assets/images/logo_white.svg" alt="Logo - João Paulo"
+                                class="logo"></a></figure>
+                </li>
+                <li><a href="#home" class="nav-link"><i class="ri-home-line"></i>
+                        <span>Início</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="ri-information-line"></i>
+                        <span>Sobre</span></a></li>
+                <li><a href="#services" class="nav-link"><i class="ri-info-card-line"></i>
+                        <span>Serviços</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="ri-folder-line"></i>
+                        <span>Projetos</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="ri-lightbulb-line"></i>
+                        <span>Habilidades</span></a></li>
+                <li><a href="#certificates" class="nav-link"><i class="ri-article-line"></i>
+                        <span>Certificados</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="home">
+            <div id="home-inner">
+                <p>Olá, eu sou João Paulo!</p>
+                <h1>Desenvolvedor Fullstack</h1>
+                <h2>"Do terminal <span style="color: #000000;">escuro</span>
+                    nasce o <span style="color: #FFFC61;">amarelo</span>"</h2>
+            </div>
+            <figure id="home-img">
+                <img src="./assets/images/me.png" alt="Imagem de João Paulo">
             </figure>
-        </header>
-        <aside>
-            <nav id="sidebar">
-                <ul>
-                    <li><figure><a href="#"><img
-                                    src="./assets/images/logo_white.svg"
-                                    alt="Logo - João Paulo"
-                                    class="logo"></a></figure></li>
-                    <li><a href="#home" class="nav-link"><i
-                                class="ri-home-line"></i>
-                            <span>Início</span></a></li>
-                    <li><a href="#about" class="nav-link"><i
-                                class="ri-information-line"></i>
-                            <span>Sobre</span></a></li>
-                    <li><a href="#services" class="nav-link"><i
-                                class="ri-info-card-line"></i>
-                            <span>Serviços</span></a></li>
-                    <li><a href="#projects" class="nav-link"><i
-                                class="ri-folder-line"></i>
-                            <span>Projetos</span></a></li>
-                    <li><a href="#skills" class="nav-link"><i
-                                class="ri-lightbulb-line"></i>
-                            <span>Skills</span></a></li>
-                    <li><a href="#contact" class="nav-link"><i
-                                class="ri-contacts-line"></i>
-                            <span>Contato</span></a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <section id="home">
-                <div id="home-inner">
-                    <p>Olá, eu sou João Paulo!</p>
-                    <h1>Desenvolvedor Fullstack</h1>
-                    <h2>"Do terminal <span style="color: #000000;">escuro</span>
-                        nasce o <span
-                            style="color: #FFFC61;">amarelo</span>"</h2>
-                </div>
-                <figure id="home-img">
-                    <img src="./assets/images/me.png"
-                        alt="Imagem de João Paulo">
-                </figure>
-            </section>
-            <section id="about">
-                <div class="about-inner">
-                    <div>
-                        <h2>Sobre <span style="color: #001C35;">mim</span></h2>
-                        <article>
-                            <p> Olá! <span style="color: #001C35;">Eu sou o João
-                                    Paulo</span>, tenho 18 anos e,
-                                recentemente, conclui o curso de <span
-                                    style="color: #FFFC61;">Técnico em
-                                    Informática</span>, onde adquiri experiência
-                                prática em
-                                diversas linguagens de programação, como <span
-                                    style="color: #FFFC61;">Java</span>,
-                                <span style="color: #FFFC61;">JavaScript</span>,
-                                <span style="color: #FFFC61;">C/C++/C#</span>,
-                                <span
-                                    style="color: #FFFC61;">PHP</span> e <span
-                                    style="color: #FFFC61;">SQL</span>. Durante
-                                a
-                                formação,
-                                desenvolvi projetos práticos e obtive um
-                                conhecimento sólido em áreas como redes de
-                                computadores, banco de dados, sistemas
-                                operacionais
-                                e programação para a internet.</p>
-                            <p> Atualmente, no período da manhã estou cursando
-                                <span
-                                    style="color: #FFFC61;">Análise e
-                                    Desenvolvimento de
-                                    Sistemas</span> na FATEC, onde
-                                estou expandindo ainda mais minhas habilidades e
-                                conhecimentos no campo da tecnologia. Meu
-                                objetivo é
-                                me aprofundar nas áreas de inteligência
-                                artificial e
-                                desenvolvimento back-end, buscando adquirir
-                                experiência prática e me manter atualizado nas
-                                áreas
-                                emergentes da tecnologia.</p>
-                        </article>
-                    </div>
-
-                </div>
-                <div class="about-inner">
-                    <figure>
-                    </figure>
-                </div>
-            </section>
-            <section id="services">
-                <div id="services-inner">
-                    <h2>Serviços</h2>
+        </section>
+        <section id="about">
+            <div class="about-inner">
+                <div>
+                    <h2>Sobre <span style="color: #001C35;">mim</span></h2>
                     <article>
-                        <ul id="services-list">
-                            <li>Desenvolvimento de sistemas web e mobile, com
-                                foco em soluções personalizadas para atender às
-                                necessidades dos clientes.</li>
-                            <li>Criação de sites responsivos e otimizados para
-                                dispositivos móveis, garantindo uma experiência
-                                de usuário excepcional.</li>
-                            <li>Implementação de soluções de banco de dados, com
-                                foco em segurança, escalabilidade e
-                                desempenho.</li>
-                            <li>Suporte técnico e manutenção de sistemas,
-                                garantindo o funcionamento adequado e a
-                                segurança das aplicações.</li>
-                            <li>Treinamento e capacitação em tecnologias
-                                específicas, visando compartilhar conhecimentos
-                                e boas práticas com equipes de
-                                desenvolvimento.</li>
-                            <li>Criação de soluções de automação para otimizar
-                                tarefas repetitivas e aumentar a eficiência dos
-                                processos.</li>
-                        </ul>
+                        <p> Olá! <span style="color: #001C35;">Eu sou o João
+                                Paulo</span>, tenho 18 anos e,
+                            recentemente, conclui o curso de <span style="color: #FFFC61;">Técnico em
+                                Informática</span>, onde adquiri experiência
+                            prática em
+                            diversas linguagens de programação, como <span style="color: #FFFC61;">Java</span>,
+                            <span style="color: #FFFC61;">JavaScript</span>,
+                            <span style="color: #FFFC61;">C/C++/C#</span>,
+                            <span style="color: #FFFC61;">PHP</span> e <span style="color: #FFFC61;">SQL</span>. Durante
+                            a
+                            formação,
+                            desenvolvi projetos práticos e obtive um
+                            conhecimento sólido em áreas como redes de
+                            computadores, banco de dados, sistemas
+                            operacionais
+                            e programação para a internet.
+                        </p>
+                        <p> Atualmente, no período da manhã estou cursando
+                            <span style="color: #FFFC61;">Análise e
+                                Desenvolvimento de
+                                Sistemas</span> na FATEC, onde
+                            estou expandindo ainda mais minhas habilidades e
+                            conhecimentos no campo da tecnologia. Meu
+                            objetivo é
+                            me aprofundar nas áreas de inteligência
+                            artificial e
+                            desenvolvimento back-end, buscando adquirir
+                            experiência prática e me manter atualizado nas
+                            áreas
+                            emergentes da tecnologia.
+                        </p>
                     </article>
                 </div>
-            </section>
-            <section id="projects">
-                <div id="projects-inner">
-                    <h2>Projetos</h2>
-                    <div id="projects-content">
-                        <div class="project-tab">
-                            <h3>Descrição</h3>
-                            <article id="CantinaOnline+"
-                                class="project-description active"
-                                data-project="CantinaOnline+">
-                                <a href="https://github.com/jopaul0/CantinaOnline-TCC">CantinaOnline+</a>
-                                <p>
-                                    Projeto destinado ao TCC do curso Ensino
-                                    Técnico em Informática do Colégio Opção.
-                                    O trabalho consiste em um sistema que
-                                    gerencia e torna possível compras de
-                                    produtos online
-                                    na cantina da escola, embora nunca posto na
-                                    internet, ou seja, um protótipo.
-                                </p>
-                            </article>
 
-                            <article id="SAMA" class="project-description"
-                                data-project="SAMA">
-                                <a href="https://github.com/Equipe-DotTec/SAMA-API">SAMA</a>
-                                <p>
-                                    O SAMA é um sistema para envio de atestados
-                                    médicos e avaliações de equipes ágeis,
-                                    ele facilita a gestão de documentos médicos
-                                    e o acompanhamento do desempenho de times,
-                                    garantindo maior transparência e eficiência
-                                    no processo.
-                                </p>
-                            </article>
-                        </div>
-                        <div class="project-tab">
-                            <div id="carousel-container">
-                                <div id="carousel-videos">
-                                    <iframe
-                                        class="project-video active"
-                                        src="https://drive.google.com/file/d/1LH1A1rWwAm5pE_VVdAxRxdb-YdBoqIxJ/preview"
-                                        data-project="CantinaOnline+"
-                                        allow="autoplay"></iframe>
+            </div>
+            <div class="about-inner">
+                <figure>
+                </figure>
+            </div>
+        </section>
+        <section id="services">
+            <div id="services-inner">
+                <h2>Serviços</h2>
+                <article>
+                    <ul id="services-list">
+                        <li>Desenvolvimento de sistemas web e mobile, com
+                            foco em soluções personalizadas para atender às
+                            necessidades dos clientes.</li>
+                        <li>Criação de sites responsivos e otimizados para
+                            dispositivos móveis, garantindo uma experiência
+                            de usuário excepcional.</li>
+                        <li>Implementação de soluções de banco de dados, com
+                            foco em segurança, escalabilidade e
+                            desempenho.</li>
+                        <li>Suporte técnico e manutenção de sistemas,
+                            garantindo o funcionamento adequado e a
+                            segurança das aplicações.</li>
+                        <li>Treinamento e capacitação em tecnologias
+                            específicas, visando compartilhar conhecimentos
+                            e boas práticas com equipes de
+                            desenvolvimento.</li>
+                        <li>Criação de soluções de automação para otimizar
+                            tarefas repetitivas e aumentar a eficiência dos
+                            processos.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="projects">
+            <div id="projects-inner">
+                <h2>Projetos</h2>
+                <div id="projects-content">
+                    <div class="project-tab">
+                        <h3>Descrição</h3>
+                        <article id="CantinaOnline+" class="project-description active" data-project="CantinaOnline+">
+                            <a href="https://github.com/jopaul0/CantinaOnline-TCC">CantinaOnline+</a>
+                            <p>
+                                Projeto destinado ao TCC do curso Ensino
+                                Técnico em Informática do Colégio Opção.
+                                O trabalho consiste em um sistema que
+                                gerencia e torna possível compras de
+                                produtos online
+                                na cantina da escola, embora nunca posto na
+                                internet, ou seja, um protótipo.
+                            </p>
+                        </article>
 
-                                    <iframe
-                                        class="project-video"
-                                        src="https://drive.google.com/file/d/1jTk7eODt-Jak68Yrb946AIikA18FqWzU/preview"
-                                        data-project="SAMA"
-                                        allow="autoplay"></iframe>
-                                </div>
+                        <article id="SAMA" class="project-description" data-project="SAMA">
+                            <a href="https://github.com/Equipe-DotTec/SAMA-API">SAMA</a>
+                            <p>
+                                O SAMA é um sistema para envio de atestados
+                                médicos e avaliações de equipes ágeis,
+                                ele facilita a gestão de documentos médicos
+                                e o acompanhamento do desempenho de times,
+                                garantindo maior transparência e eficiência
+                                no processo.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="project-tab">
+                        <div id="carousel-container">
+                            <div id="carousel-videos">
+                                <iframe class="project-video active"
+                                    src="https://drive.google.com/file/d/1LH1A1rWwAm5pE_VVdAxRxdb-YdBoqIxJ/preview"
+                                    data-project="CantinaOnline+" allow="autoplay"></iframe>
 
-                                <div id="controls">
-                                    <button id="btn-prev">⟨</button>
-                                    <button id="btn-next">⟩</button>
-                                </div>
+                                <iframe class="project-video"
+                                    src="https://drive.google.com/file/d/1jTk7eODt-Jak68Yrb946AIikA18FqWzU/preview"
+                                    data-project="SAMA" allow="autoplay"></iframe>
+                            </div>
+
+                            <div id="controls">
+                                <button id="btn-prev">⟨</button>
+                                <button id="btn-next">⟩</button>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section id="skills">...</section>
-                <section id="contact">...</section>
-            </main>
-            <footer></footer>
-        </body>
-    </html>
+                </div>
+        </section>
+        <section id="skills">...</section>
+        <section id="certificates">...</section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
