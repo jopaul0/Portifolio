@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 #projects-inner {
@@ -12,6 +13,7 @@
     padding: 2rem;
     background-color: #FEBD2F;
     box-shadow: 0 0 20px #FEBD2F;
+    overflow: hidden;
 }
 
 #projects-inner h2 {
@@ -35,6 +37,7 @@
 .project-tab {
     width: 50%;
     height: 100%;
+    padding: 1rem;
 }
 
 #projects-content h3 {
@@ -113,6 +116,8 @@
     color: #FEBD2F;
     text-shadow: 0 0 20px #FEBD2F;
     font-size: 2rem;
+    padding: 1rem;
+    z-index: 50;
     cursor: pointer;
     pointer-events: all;
     transition: transform 0.2s;
@@ -127,6 +132,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .project-description {
@@ -165,6 +171,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
 }
 
 .project-description.active,
