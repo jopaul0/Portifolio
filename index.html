@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>João Paulo - Desenvolvedor Fullstack</title>
-        <link rel="icon" href="./assets/logo_white.svg" type="image/png">
+        <link rel="icon" href="./assets/images/logo_white.svg" type="image/png">
 
         <!-- CSS -->
         <link rel="stylesheet" href="./style/main.css">
@@ -22,20 +22,22 @@
             rel="stylesheet">
 
         <!-- Scripts -->
-        <script src="./src/sidebar.js" type="module"></script>
+        <script src="./script/sidebar.js" type="module"></script>
+        <script src="./script/carousel.js" type="module"></script>
 
     </head>
     <body>
         <header>
             <figure id="logo-header">
-                <img src="./assets/logo.svg" alt="Logo - João Paulo"
+                <img src="./assets/images/logo.svg" alt="Logo - João Paulo"
                     class="logo">
             </figure>
         </header>
         <aside>
             <nav id="sidebar">
                 <ul>
-                    <li><figure><a href="#"><img src="./assets/logo_white.svg"
+                    <li><figure><a href="#"><img
+                                    src="./assets/images/logo_white.svg"
                                     alt="Logo - João Paulo"
                                     class="logo"></a></figure></li>
                     <li><a href="#home" class="nav-link"><i
@@ -61,7 +63,7 @@
         </aside>
         <main>
             <section id="home">
-                <div>
+                <div id="home-inner">
                     <p>Olá, eu sou João Paulo!</p>
                     <h1>Desenvolvedor Fullstack</h1>
                     <h2>"Do terminal <span style="color: #000000;">escuro</span>
@@ -69,7 +71,8 @@
                             style="color: #FFFC61;">amarelo</span>"</h2>
                 </div>
                 <figure id="home-img">
-                    <img src="./assets/me.png" alt="Imagem de João Paulo">
+                    <img src="./assets/images/me.png"
+                        alt="Imagem de João Paulo">
                 </figure>
             </section>
             <section id="about">
@@ -122,23 +125,93 @@
             </section>
             <section id="services">
                 <div id="services-inner">
+                    <h2>Serviços</h2>
                     <article>
-                        <h2>Serviços</h2>
-                            <ul id="services-list">
-                                <li>Desenvolvimento de sistemas web e mobile, com foco em soluções personalizadas para atender às necessidades dos clientes.</li>
-                                <li>Criação de sites responsivos e otimizados para dispositivos móveis, garantindo uma experiência de usuário excepcional.</li>
-                                <li>Implementação de soluções de banco de dados, com foco em segurança, escalabilidade e desempenho.</li>
-                                <li>Suporte técnico e manutenção de sistemas, garantindo o funcionamento adequado e a segurança das aplicações.</li>
-                                <li>Treinamento e capacitação em tecnologias específicas, visando compartilhar conhecimentos e boas práticas com equipes de desenvolvimento.</li>
-                                <li>Criação de soluções de automação para otimizar tarefas repetitivas e aumentar a eficiência dos processos.</li>
-                            </ul>
+                        <ul id="services-list">
+                            <li>Desenvolvimento de sistemas web e mobile, com
+                                foco em soluções personalizadas para atender às
+                                necessidades dos clientes.</li>
+                            <li>Criação de sites responsivos e otimizados para
+                                dispositivos móveis, garantindo uma experiência
+                                de usuário excepcional.</li>
+                            <li>Implementação de soluções de banco de dados, com
+                                foco em segurança, escalabilidade e
+                                desempenho.</li>
+                            <li>Suporte técnico e manutenção de sistemas,
+                                garantindo o funcionamento adequado e a
+                                segurança das aplicações.</li>
+                            <li>Treinamento e capacitação em tecnologias
+                                específicas, visando compartilhar conhecimentos
+                                e boas práticas com equipes de
+                                desenvolvimento.</li>
+                            <li>Criação de soluções de automação para otimizar
+                                tarefas repetitivas e aumentar a eficiência dos
+                                processos.</li>
+                        </ul>
                     </article>
                 </div>
             </section>
-            <section id="projects">...</section>
-            <section id="skills">...</section>
-            <section id="contact">...</section>
-        </main>
-        <footer></footer>
-    </body>
-</html>
+            <section id="projects">
+                <div id="projects-inner">
+                    <h2>Projetos</h2>
+                    <div id="projects-content">
+                        <div class="project-tab">
+                            <h3>Descrição</h3>
+                            <article id="CantinaOnline+"
+                                class="project-description active"
+                                data-project="CantinaOnline+">
+                                <h4>CantinaOnline+</h4>
+                                <p>
+                                    Projeto destinado ao TCC do curso Ensino
+                                    Técnico em Informática do Colégio Opção.
+                                    O trabalho consiste em um sistema que
+                                    gerencia e torna possível compras de
+                                    produtos online
+                                    na cantina da escola, embora nunca posto na
+                                    internet, ou seja, um protótipo.
+                                </p>
+                            </article>
+
+                            <article id="SAMA" class="project-description"
+                                data-project="SAMA">
+                                <h4>SAMA</h4>
+                                <p>
+                                    O SAMA é um sistema para envio de atestados
+                                    médicos e avaliações de equipes ágeis,
+                                    ele facilita a gestão de documentos médicos
+                                    e o acompanhamento do desempenho de times,
+                                    garantindo maior transparência e eficiência
+                                    no processo.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="project-tab">
+                            <div id="carousel-container">
+                                <div id="carousel-videos">
+                                    <iframe
+                                        class="project-video active"
+                                        src="https://drive.google.com/file/d/1LH1A1rWwAm5pE_VVdAxRxdb-YdBoqIxJ/preview"
+                                        data-project="CantinaOnline+"
+                                        allow="autoplay"></iframe>
+
+                                    <iframe
+                                        class="project-video"
+                                        src="https://drive.google.com/file/d/1jTk7eODt-Jak68Yrb946AIikA18FqWzU/preview"
+                                        data-project="SAMA"
+                                        allow="autoplay"></iframe>
+                                </div>
+
+                                <div id="controls">
+                                    <button id="btn-prev">⟨</button>
+                                    <button id="btn-next">⟩</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">...</section>
+                <section id="contact">...</section>
+            </main>
+            <footer></footer>
+        </body>
+    </html>

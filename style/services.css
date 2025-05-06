@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
-
+/* === ELEMENTO PRINCIPAL === */
 #services {
     height: 75vh;
     padding: 5rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    
 }
 
+/* === CONTEÚDO PRINCIPAL === */
 #services-inner {
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%;
+    flex: 1 1 100%;
     max-width: 70%;
     height: 100%;
     display: flex;
@@ -22,24 +17,14 @@
     align-items: center;
     justify-content: start;
     padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
     gap: 1rem;
-    overflow-x: hidden;
     overflow-y: auto;
     background-color: #ffffff !important;
-    clip-path: polygon(40px 0%,
-            /* canto superior esquerdo */
-            calc(100% - 40px) 0%,
-            /* canto superior direito */
-            100% 40px,
-            100% calc(100% - 40px),
-            /* canto inferior direito */
-            calc(100% - 40px) 100%,
-            40px 100%,
-            /* canto inferior esquerdo */
-            0% calc(100% - 40px),
-            0% 40px);
-    
+    clip-path: polygon(
+        40px 0%, calc(100% - 40px) 0%, 100% 40px,
+        100% calc(100% - 40px), calc(100% - 40px) 100%,
+        40px 100%, 0% calc(100% - 40px), 0% 40px
+    );
 }
 
 #services-inner h2 {
@@ -66,12 +51,11 @@
     font-weight: 550;
     font-size: clamp(1rem, 2.2vw, 1.6rem);
     text-align: justify;
-    text-indent: 0;
     line-height: 1.5em;
 }
 
 #services-list li::before {
-    content: '✔'; /* ou use '🔧', '🛠️', '🚀' se quiser mais informal */
+    content: '✔';
     position: absolute;
     left: 0;
     top: 0;
@@ -80,28 +64,28 @@
     font-weight: bold;
 }
 
+/* === MEDIA QUERIES === */
+
+/* Até 768px */
 @media (max-width: 768px) {
     #services {
         padding: 3rem;
         height: 50vh;
     }
 
-
     #services-inner {
         padding: 1.5rem;
         max-width: 100%;
     }
-    
 }
 
+/* Até 480px */
 @media (max-width: 480px) {
     #services {
         padding: 2rem;
     }
 
-
     #services-inner {
         padding: 1rem;
-        max-width: 100%;
     }
 }

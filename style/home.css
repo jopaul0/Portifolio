@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
-
 /* === ELEMENTO PRINCIPAL === */
 #home {
     display: flex;
 }
 
 /* === CONTEÚDO PRINCIPAL === */
-#home div {
+#home-inner {
     position: absolute;
     width: 50vw;
     aspect-ratio: 756 / 454;
@@ -15,31 +13,30 @@
     padding: 2rem;
     z-index: 50;
     margin-left: 10vw;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
 }
 
-#home div h1,
-#home div h2,
-#home div p {
+#home-inner h1,
+#home-inner h2,
+#home-inner p {
     font-weight: 550;
     text-align: center;
 }
 
-#home div h1 {
+#home-inner h1 {
     color: #001631;
     font-size: 4vw;
 }
 
-#home div h2 {
+#home-inner h2 {
     color: #ffffff;
     font-size: 3vw;
 }
 
-#home div p {
+#home-inner p {
     color: #ffffff;
     text-indent: 5vw;
     font-size: 1.5vw;
@@ -72,22 +69,22 @@
         justify-content: center;
     }
 
-    #home div {
+    #home-inner {
         position: relative;
         width: 80%;
         margin: 0 auto;
         padding: 1rem;
     }
 
-    #home div h1 {
+    #home-inner h1 {
         font-size: 6vw;
     }
 
-    #home div h2 {
+    #home-inner h2 {
         font-size: 4vw;
     }
 
-    #home div p {
+    #home-inner p {
         font-size: 3vw;
     }
 
@@ -103,7 +100,7 @@
         padding-top: 5vh;
     }
 
-    #home div {
+    #home-inner{
         width: 80%;
         height: auto;
         gap: 1rem;
@@ -120,7 +117,7 @@
         justify-content: center;
     }
 
-    #home div {
+    #home-inner {
         position: relative;
         width: 90%;
         margin: 0 auto;
@@ -128,15 +125,15 @@
         gap: 1.5rem;
     }
 
-    #home div h1 {
+    #home-inner h1 {
         font-size: 6vw;
     }
 
-    #home div h2 {
+    #home-inner h2 {
         font-size: 4.5vw;
     }
 
-    #home div p {
+    #home-inner p {
         font-size: 4vw;
     }
 

@@ -6,20 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     logos.forEach(function (logo) {
         logo.addEventListener('click', function (event) {
-            event.stopPropagation(); // Impede que o clique no logo feche o sidebar
+            event.stopPropagation();
             sidebar.classList.toggle('active');
         });
     });
 
-    // Fecha a barra lateral ao clicar fora dela
     document.addEventListener('click', function (event) {
-        // Verifica se o clique foi fora da sidebar
         if (!sidebar.contains(event.target)) {
             sidebar.classList.remove('active');
         }
     });
 
-    // Previne que o clique dentro da sidebar feche ela
     sidebar.addEventListener('click', function (event) {
         event.stopPropagation();
     });

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #001631;
-  background-image: url('../assets/background.svg');
+  background-image: url('../assets/images/background.svg');
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
   animation: slideIn 1s ease-out;
 }
