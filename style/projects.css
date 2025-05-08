@@ -7,7 +7,7 @@
 }
 
 #projects-inner {
-    width: 70%;
+    width: 90%;
     height: 60vh;
     text-align: center;
     padding: 2rem;
@@ -20,6 +20,7 @@
     color: #001631;
     font-weight: 550;
     font-size: clamp(1.8rem, 4vw, 3rem);
+    margin: 1%;
 }
 
 #projects-content {
@@ -31,13 +32,23 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 
 }
 
 .project-tab {
-    width: 50%;
+    width: 45%;
     height: 100%;
     padding: 1rem;
+    background-color: #ffc955;
+    clip-path: polygon(40px 0%, 100% 0%, 100% calc(100% - 40px),
+            calc(100% - 40px) 100%, 0% 100%, 0% 40px);
+
+}
+
+.project-tab:has(#carousel-container) {
+    clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px,
+            100% 100%, 40px 100%, 0% calc(100% - 40px));
 }
 
 #projects-content h3 {
@@ -53,6 +64,7 @@
     font-size: clamp(1.35rem, 3vw, 2.25rem);
     transition: all 0.3s ease;
 }
+
 #projects-content a:hover {
     text-shadow: 0 0 20px #ffffff;
 }
@@ -196,7 +208,7 @@
         height: auto;
     }
 
-    #carousel-container iframe{
+    #carousel-container iframe {
         height: 100%;
     }
 
@@ -212,6 +224,7 @@
 }
 
 @media (max-width: 768px) {
+
     #projects-inner h2,
     #projects-content h3,
     #projects-content h4,
@@ -231,6 +244,7 @@
     #controls button {
         padding: 1rem;
     }
+
     #controls button {
         font-size: 2rem;
     }
@@ -249,5 +263,5 @@
         font-size: 1.2rem;
     }
 
-    
+
 }

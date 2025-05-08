@@ -21,7 +21,6 @@
 
 #footer-portfolio{
     align-items: center;
-    text-align: justify;
     padding: 0 2rem;
     height: 100%;
 }
@@ -118,7 +117,7 @@
         grid-template-areas:
             "logo"
             "info";
-        padding: 5rem;
+        padding: 5rem 1rem;
     }
 
     #footer-info {
