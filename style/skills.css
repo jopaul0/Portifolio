@@ -1,141 +1,79 @@
-#skills-inner {
-    min-height: 80vh;
-    margin: 10%;
-    background-color: #ffffff;
-    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
-            100% calc(100% - 40px), calc(100% - 40px) 100%,
-            40px 100%, 0% calc(100% - 40px), 0% 40px);
-    padding: 2rem;
-}
-
-#skills-inner h2 {
-    margin: 1rem;
-    color: #001631;
-    text-align: center;
-    font-weight: 550;
-    font-size: clamp(1.8rem, 4vw, 3rem);
-}
-
-#skills-content {
-    height: 80%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-#skills-content div:nth-child(1) {
-    clip-path: polygon(40px 0%, 100% 0%, 100% calc(100% - 40px),
-            calc(100% - 40px) 100%, 0% 100%, 0% 40px);
-}
-
-#skills-content div:nth-child(2) {
-    clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px,
-            100% 100%, 40px 100%, 0% calc(100% - 40px));
-}
-
-#skills-content div:nth-child(3) {
-    clip-path: polygon(0% calc(100% - 40px),
-            0% 0%,
-            calc(100% - 40px) 0%,
-            100% 40px,
-            100% 100%,
-            40px 100%);
-
-}
-
-#skills-content div:nth-child(4) {
-    clip-path: polygon(0% 40px, 40px 0%, 100% 0%,
-            100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%);
-}
-
-
-.skill-content {
-    background-color: #001631;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-}
-
-
-.skill-content .icons {
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-items: center;
-    font-size: 4rem;
-    height: 100%;
-    padding: 1rem;
-    align-items: center;
-}
-
-.custom-icon {
-    width: 32px;
-    height: 32px;
-    filter: invert(36%) sepia(28%) saturate(500%) hue-rotate(180deg);
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    font-size: 1rem;
-}
-
-.skills-list li {
-    background: #FEBD2F;
-    box-shadow: 0 0 15px #FEBD2F;
-    padding: 0.6rem 1rem;
-    border-radius: 12px;
-    width: 80%;
-    margin: 0 auto;
-    font-weight: 700;
-    transition: all 0.3s ease;
-}
-
-.skills-list li:hover {
-    background-color: #ffffff;
-    color: #FEBD2F;
-    text-shadow: 0 0 35px #FEBD2F;
-    cursor: pointer;
-}
-/* Para telas médias (de 800px até 1024px) */
-@media (min-width: 800px) and (max-width: 1024px) {
     #skills-inner {
-        margin: 5%;
+        min-height: 80vh;
+        margin: 10%;
+        background-color: #ffffff;
+        clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
+                100% calc(100% - 40px), calc(100% - 40px) 100%,
+                40px 100%, 0% calc(100% - 40px), 0% 40px);
         padding: 2rem;
     }
 
     #skills-inner h2 {
-        font-size: 2rem;
         margin: 1rem;
+        color: #001631;
+        text-align: center;
+        font-weight: 550;
+        font-size: clamp(1.8rem, 4vw, 3rem);
     }
 
     #skills-content {
+        height: 80%;
+        width: 100%;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Duas colunas */
         gap: 1rem;
     }
 
-    #skills-content .skill-content {
-        clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
-                100% calc(100% - 40px), calc(100% - 40px) 100%,
-                40px 100%, 0% calc(100% - 40px), 0% 40px);
-        padding: 1.5rem;
+    #skills-content div:nth-child(1) {
+        clip-path: polygon(40px 0%, 100% 0%, 100% calc(100% - 40px),
+                calc(100% - 40px) 100%, 0% 100%, 0% 40px);
     }
 
-    .skill-content h3 {
-        font-size: 1.5rem;
+    #skills-content div:nth-child(2) {
+        clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px,
+                100% 100%, 40px 100%, 0% calc(100% - 40px));
     }
+
+    #skills-content div:nth-child(3) {
+        clip-path: polygon(0% calc(100% - 40px),
+                0% 0%,
+                calc(100% - 40px) 0%,
+                100% 40px,
+                100% 100%,
+                40px 100%);
+
+    }
+
+    #skills-content div:nth-child(4) {
+        clip-path: polygon(0% 40px, 40px 0%, 100% 0%,
+                100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%);
+    }
+
+
+    .skill-content {
+        background-color: #001631;
+        color: #ffffff;
+        text-align: center;
+        padding: 1rem;
+    }
+
 
     .skill-content .icons {
+        margin-top: 0.5rem;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        font-size: 3rem;
-        gap: 0.75rem;
+        gap: 1rem;
+        justify-items: center;
+        font-size: 4rem;
+        height: 100%;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .custom-icon {
+        width: 32px;
+        height: 32px;
+        filter: invert(36%) sepia(28%) saturate(500%) hue-rotate(180deg);
     }
 
     .skills-list {
@@ -144,11 +82,8 @@
         margin: 1rem 0 0 0;
         display: grid;
         grid-template-columns: 1fr;
-        /* Coluna única */
         gap: 0.5rem;
         font-size: 1rem;
-        word-wrap: break-word;
-        /* Garante que o conteúdo quebre quando ultrapassar a largura */
     }
 
     .skills-list li {
@@ -156,13 +91,10 @@
         box-shadow: 0 0 15px #FEBD2F;
         padding: 0.6rem 1rem;
         border-radius: 12px;
-        width: 100%;
-        /* Garante que os itens ocuparam toda a largura disponível */
+        width: 80%;
         margin: 0 auto;
         font-weight: 700;
         transition: all 0.3s ease;
-        white-space: normal;
-        /* Permite que o texto quebre em várias linhas */
     }
 
     .skills-list li:hover {
@@ -171,49 +103,117 @@
         text-shadow: 0 0 35px #FEBD2F;
         cursor: pointer;
     }
-}
+    /* Para telas médias (de 800px até 1024px) */
+    @media (min-width: 800px) and (max-width: 1024px) {
+        #skills-inner {
+            margin: 5%;
+            padding: 2rem;
+        }
 
-@media (max-width: 768px) {
-    #skills-inner {
-        height: auto;
-        margin: 5%;
-        padding: 1rem;
+        #skills-inner h2 {
+            font-size: 2rem;
+            margin: 1rem;
+        }
+
+        #skills-content {
+            grid-template-columns: repeat(2, 1fr);
+            /* Duas colunas */
+            gap: 1rem;
+        }
+
+        #skills-content .skill-content {
+            clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
+                    100% calc(100% - 40px), calc(100% - 40px) 100%,
+                    40px 100%, 0% calc(100% - 40px), 0% 40px);
+            padding: 1.5rem;
+        }
+
+        .skill-content h3 {
+            font-size: 1.5rem;
+        }
+
+        .skill-content .icons {
+            grid-template-columns: repeat(3, 1fr);
+            font-size: 3rem;
+            gap: 0.75rem;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Coluna única */
+            gap: 0.5rem;
+            font-size: 1rem;
+            word-wrap: break-word;
+            /* Garante que o conteúdo quebre quando ultrapassar a largura */
+        }
+
+        .skills-list li {
+            background: #FEBD2F;
+            box-shadow: 0 0 15px #FEBD2F;
+            padding: 0.6rem 1rem;
+            border-radius: 12px;
+            width: 100%;
+            /* Garante que os itens ocuparam toda a largura disponível */
+            margin: 0 auto;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            white-space: normal;
+            /* Permite que o texto quebre em várias linhas */
+        }
+
+        .skills-list li:hover {
+            background-color: #ffffff;
+            color: #FEBD2F;
+            text-shadow: 0 0 35px #FEBD2F;
+            cursor: pointer;
+        }
     }
 
-    #skills-inner h2 {
-        font-size: 1.8rem;
-        margin: 0.5rem;
-    }
+    @media (max-width: 768px) {
+        #skills-inner {
+            height: auto;
+            margin: 5%;
+            padding: 1rem;
+        }
 
-    #skills-content {
-        grid-template-columns: 1fr;
-        gap: 0.75rem;
-    }
+        #skills-inner h2 {
+            font-size: 1.8rem;
+            margin: 0.5rem;
+        }
 
-    #skills-content .skill-content {
-        clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
-                100% calc(100% - 40px), calc(100% - 40px) 100%,
-                40px 100%, 0% calc(100% - 40px), 0% 40px) !important;
-        padding: 1rem;
-    }
+        #skills-content {
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
 
-    .skill-content h3 {
-        font-size: 1.25rem;
-    }
+        #skills-content .skill-content {
+            clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
+                    100% calc(100% - 40px), calc(100% - 40px) 100%,
+                    40px 100%, 0% calc(100% - 40px), 0% 40px) !important;
+            padding: 1rem;
+        }
 
-    .skill-content .icons {
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 2.5rem;
-        gap: 0.75rem;
-    }
+        .skill-content h3 {
+            font-size: 1.25rem;
+        }
 
-    .skills-list {
-        font-size: 0.9rem;
-        gap: 0.4rem;
-    }
+        .skill-content .icons {
+            grid-template-columns: repeat(3, 1fr);
+            font-size: 2.5rem;
+            gap: 0.75rem;
+        }
 
-    .skills-list li {
-        padding: 0.5rem 0.8rem;
-        width: 90%;
+        .skills-list {
+            font-size: 0.9rem;
+            gap: 0.4rem;
+        }
+
+        .skills-list li {
+            padding: 0.5rem 0.8rem;
+            width: 90%;
+        }
     }
-}
