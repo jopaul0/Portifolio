@@ -24,17 +24,17 @@
         gap: 1rem;
     }
 
-    #skills-content div:nth-child(1) {
+    #skills-content .skill-content:nth-child(1) {
         clip-path: polygon(40px 0%, 100% 0%, 100% calc(100% - 40px),
                 calc(100% - 40px) 100%, 0% 100%, 0% 40px);
     }
 
-    #skills-content div:nth-child(2) {
+    #skills-content .skill-content:nth-child(2) {
         clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px,
                 100% 100%, 40px 100%, 0% calc(100% - 40px));
     }
 
-    #skills-content div:nth-child(3) {
+    #skills-content .skill-content:nth-child(3) {
         clip-path: polygon(0% calc(100% - 40px),
                 0% 0%,
                 calc(100% - 40px) 0%,
@@ -44,7 +44,7 @@
 
     }
 
-    #skills-content div:nth-child(4) {
+    #skills-content .skill-content:nth-child(4) {
         clip-path: polygon(0% 40px, 40px 0%, 100% 0%,
                 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%);
     }
@@ -68,12 +68,6 @@
         height: 100%;
         padding: 1rem;
         align-items: center;
-    }
-
-    .custom-icon {
-        width: 32px;
-        height: 32px;
-        filter: invert(36%) sepia(28%) saturate(500%) hue-rotate(180deg);
     }
 
     .skills-list {
@@ -103,6 +97,51 @@
         text-shadow: 0 0 35px #FEBD2F;
         cursor: pointer;
     }
+
+
+    .tooltip:hover i {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .tooltip i {
+        transition: all 0.3s ease;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip .tooltip-text {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: left center;
+        background-color: #FEBD2F;
+        box-shadow: 0 0 15px #FEBD2F;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 8px;
+        font-size: 12px;
+        white-space: nowrap;
+        z-index: 100;
+        opacity: 0;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .tooltip:hover .tooltip-text {
+        transform: translateX(-50%) scaleX(1);
+        opacity: 1;
+    }
+
+
+
+
+
+
     /* Para telas médias (de 800px até 1024px) */
     @media (min-width: 800px) and (max-width: 1024px) {
         #skills-inner {
