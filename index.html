@@ -1,382 +1,432 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>João Paulo - Desenvolvedor Fullstack</title>
-        <link rel="icon" href="./assets/images/logo_white.svg" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Paulo - Desenvolvedor Fullstack</title>
+    <link rel="icon" href="./assets/images/logo_white.svg" type="image/png">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="./style/main.css">
-        <link rel="stylesheet" href="./style/sidebar.css">
-        <link rel="stylesheet" href="./style/home.css">
-        <link rel="stylesheet" href="./style/about.css">
-        <link rel="stylesheet" href="./style/services.css">
-        <link rel="stylesheet" href="./style/projects.css">
-        <link rel="stylesheet" href="./style/skills.css">
-        <link rel="stylesheet" href="./style/certificates.css">
-        <link rel="stylesheet" href="./style/footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/services.css">
+    <link rel="stylesheet" href="./style/projects.css">
+    <link rel="stylesheet" href="./style/skills.css">
+    <link rel="stylesheet" href="./style/certificates.css">
+    <link rel="stylesheet" href="./style/footer.css">
 
-        <!-- Bibliotecas -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Bibliotecas -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-        <!-- Scripts -->
-        <script src="./script/sidebar.js" type="module"></script>
-        <script src="./script/carousel.js" type="module"></script>
+    <!-- Scripts -->
+    <script src="./script/sidebar.js" type="module"></script>
+    <script src="./script/projects.js" type="module"></script>
 
-    </head>
+</head>
 
-    <body>
-        <header>
-            <figure id="logo-header">
-                <img src="./assets/images/logo.svg" alt="Logo - João Paulo"
-                    class="logo">
+<body>
+    <header>
+        <figure id="logo-header">
+            <img src="./assets/images/logo.svg" alt="Logo - João Paulo" class="logo">
+        </figure>
+    </header>
+    <aside>
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <figure><a href="#"><img src="./assets/images/logo_white.svg" alt="Logo - João Paulo"
+                                class="logo"></a></figure>
+                </li>
+                <li><a href="#home" class="nav-link"><i class="ri-home-line"></i>
+                        <span>Início</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="ri-information-line"></i>
+                        <span>Sobre</span></a></li>
+                <li><a href="#services" class="nav-link"><i class="ri-info-card-line"></i>
+                        <span>Serviços</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="ri-folder-line"></i>
+                        <span>Projetos</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="ri-lightbulb-line"></i>
+                        <span>Habilidades</span></a></li>
+                <li><a href="#certificates" class="nav-link"><i class="ri-article-line"></i>
+                        <span>Certificados</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="home">
+            <div id="home-inner">
+                <p>Olá, eu sou João Paulo!</p>
+                <h1>Desenvolvedor Fullstack</h1>
+                <h2>"Do terminal <span style="color: #000000;">escuro</span>
+                    nasce o <span style="color: #FFFC61;">amarelo</span>"</h2>
+            </div>
+            <figure id="home-img">
+                <img src="./assets/images/me.png" alt="Imagem de João Paulo">
             </figure>
-        </header>
-        <aside>
-            <nav id="sidebar">
-                <ul>
-                    <li>
-                        <figure><a href="#"><img
-                                    src="./assets/images/logo_white.svg"
-                                    alt="Logo - João Paulo"
-                                    class="logo"></a></figure>
-                    </li>
-                    <li><a href="#home" class="nav-link"><i
-                                class="ri-home-line"></i>
-                            <span>Início</span></a></li>
-                    <li><a href="#about" class="nav-link"><i
-                                class="ri-information-line"></i>
-                            <span>Sobre</span></a></li>
-                    <li><a href="#services" class="nav-link"><i
-                                class="ri-info-card-line"></i>
-                            <span>Serviços</span></a></li>
-                    <li><a href="#projects" class="nav-link"><i
-                                class="ri-folder-line"></i>
-                            <span>Projetos</span></a></li>
-                    <li><a href="#skills" class="nav-link"><i
-                                class="ri-lightbulb-line"></i>
-                            <span>Habilidades</span></a></li>
-                    <li><a href="#certificates" class="nav-link"><i
-                                class="ri-article-line"></i>
-                            <span>Certificados</span></a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <section id="home">
-                <div id="home-inner">
-                    <p>Olá, eu sou João Paulo!</p>
-                    <h1>Desenvolvedor Fullstack</h1>
-                    <h2>"Do terminal <span style="color: #000000;">escuro</span>
-                        nasce o <span
-                            style="color: #FFFC61;">amarelo</span>"</h2>
-                </div>
-                <figure id="home-img">
-                    <img src="./assets/images/me.png"
-                        alt="Imagem de João Paulo">
-                </figure>
-            </section>
-            <section id="about">
-                <div class="about-inner">
-                    <div>
-                        <h2>Sobre <span style="color: #001C35;">mim</span></h2>
-                        <article>
-                            <p> Olá! <span style="color: #001C35;">Eu sou o João
-                                    Paulo</span>, tenho 18 anos e,
-                                recentemente, conclui o curso de <span
-                                    style="color: #FFFC61;">Técnico em
-                                    Informática</span>, onde adquiri experiência
-                                prática em
-                                diversas linguagens de programação, como <span
-                                    style="color: #FFFC61;">Java</span>,
-                                <span style="color: #FFFC61;">JavaScript</span>,
-                                <span style="color: #FFFC61;">C/C++/C#</span>,
-                                <span style="color: #FFFC61;">PHP</span> e <span
-                                    style="color: #FFFC61;">SQL</span>. Durante
-                                a
-                                formação,
-                                desenvolvi projetos práticos e obtive um
-                                conhecimento sólido em áreas como redes de
-                                computadores, banco de dados, sistemas
-                                operacionais
-                                e programação para a internet.
-                            </p>
-                            <p> Atualmente, no período da manhã estou cursando
-                                <span style="color: #FFFC61;">Análise e
-                                    Desenvolvimento de
-                                    Sistemas</span> na FATEC, onde
-                                estou expandindo ainda mais minhas habilidades e
-                                conhecimentos no campo da tecnologia. Meu
-                                objetivo é
-                                me aprofundar nas áreas de inteligência
-                                artificial e
-                                desenvolvimento back-end, buscando adquirir
-                                experiência prática e me manter atualizado nas
-                                áreas
-                                emergentes da tecnologia.
-                            </p>
-                        </article>
-                    </div>
-
-                </div>
-                <div class="about-inner">
-                    <figure>
-                    </figure>
-                </div>
-            </section>
-            <section id="services">
-                <div id="services-inner">
-                    <h2>Serviços</h2>
+        </section>
+        <section id="about">
+            <div class="about-inner">
+                <div>
+                    <h2>Sobre <span style="color: #001C35;">mim</span></h2>
                     <article>
-                        <ul id="services-list">
-                            <li>Desenvolvimento de sistemas web e mobile, com
-                                foco em soluções personalizadas para atender às
-                                necessidades dos clientes.</li>
-                            <li>Criação de sites responsivos e otimizados para
-                                dispositivos móveis, garantindo uma experiência
-                                de usuário excepcional.</li>
-                            <li>Implementação de soluções de banco de dados, com
-                                foco em segurança, escalabilidade e
-                                desempenho.</li>
-                            <li>Suporte técnico e manutenção de sistemas,
-                                garantindo o funcionamento adequado e a
-                                segurança das aplicações.</li>
-                            <li>Treinamento e capacitação em tecnologias
-                                específicas, visando compartilhar conhecimentos
-                                e boas práticas com equipes de
-                                desenvolvimento.</li>
-                            <li>Criação de soluções de automação para otimizar
-                                tarefas repetitivas e aumentar a eficiência dos
-                                processos.</li>
-                        </ul>
+                        <p> Olá! <span style="color: #001C35;">Eu sou o João
+                                Paulo</span>, tenho 18 anos e,
+                            recentemente, conclui o curso de <span style="color: #FFFC61;">Técnico em
+                                Informática</span>, onde adquiri experiência
+                            prática em
+                            diversas linguagens de programação, como <span style="color: #FFFC61;">Java</span>,
+                            <span style="color: #FFFC61;">JavaScript</span>,
+                            <span style="color: #FFFC61;">C/C++/C#</span>,
+                            <span style="color: #FFFC61;">PHP</span> e <span style="color: #FFFC61;">SQL</span>. Durante
+                            a
+                            formação,
+                            desenvolvi projetos práticos e obtive um
+                            conhecimento sólido em áreas como redes de
+                            computadores, banco de dados, sistemas
+                            operacionais
+                            e programação para a internet.
+                        </p>
+                        <p> Atualmente, no período da manhã estou cursando
+                            <span style="color: #FFFC61;">Análise e
+                                Desenvolvimento de
+                                Sistemas</span> na FATEC, onde
+                            estou expandindo ainda mais minhas habilidades e
+                            conhecimentos no campo da tecnologia. Meu
+                            objetivo é
+                            me aprofundar nas áreas de inteligência
+                            artificial e
+                            desenvolvimento back-end, buscando adquirir
+                            experiência prática e me manter atualizado nas
+                            áreas
+                            emergentes da tecnologia.
+                        </p>
                     </article>
                 </div>
-            </section>
-            <section id="projects">
-                <div id="projects-inner">
-                    <h2>Projetos</h2>
-                    <div id="projects-content">
-                        <div id="project-info">
-                            <div class="project active">
-                                
-                                <figure class="project-visual">
-                                    <img src="https://static.vecteezy.com/system/resources/previews/016/916/479/original/placeholder-icon-design-free-vector.jpg"
-                                        alt="CantinaOnline+">
-                                </figure>
-                                <div class="project-text">
-                                    <h2>CantinaOnline+</h2>
-                                    <p>O CantinaOnline+ é um sistema de
-                                        gerenciamento de cantinas escolares,
-                                        desenvolvido em Python com o
-                                        framework Flask. Ele permite o
-                                        controle de vendas, estoque e
-                                        relatórios financeiros, facilitando a
-                                        administração das cantinas e melhorando
-                                        a experiência dos usuários.</p>
-                                    
+
+            </div>
+            <div class="about-inner">
+                <figure>
+                </figure>
+            </div>
+        </section>
+        <section id="services">
+            <div id="services-inner">
+                <h2>Serviços</h2>
+                <article>
+                    <ul id="services-list">
+                        <li>Desenvolvimento de sistemas web e mobile, com
+                            foco em soluções personalizadas para atender às
+                            necessidades dos clientes.</li>
+                        <li>Criação de sites responsivos e otimizados para
+                            dispositivos móveis, garantindo uma experiência
+                            de usuário excepcional.</li>
+                        <li>Implementação de soluções de banco de dados, com
+                            foco em segurança, escalabilidade e
+                            desempenho.</li>
+                        <li>Suporte técnico e manutenção de sistemas,
+                            garantindo o funcionamento adequado e a
+                            segurança das aplicações.</li>
+                        <li>Treinamento e capacitação em tecnologias
+                            específicas, visando compartilhar conhecimentos
+                            e boas práticas com equipes de
+                            desenvolvimento.</li>
+                        <li>Criação de soluções de automação para otimizar
+                            tarefas repetitivas e aumentar a eficiência dos
+                            processos.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="projects">
+            <div id="projects-inner">
+                <h2>Projetos</h2>
+                <div id="projects-content">
+                    <div id="project-info">
+                        <!--CantinaOnline+-->
+                        <div class="project active" data-project="CantinaOnline+">
+                            <figure class="project-visual">
+                                <h2>CantinaOnline+</h2>
+                                <img src="./assets/images/projects/CantinaOnlinelogo.png" alt="CantinaOnline+">
+                            </figure>
+                            <div class="project-text">
+                                <h2>Descrição</h2>
+                                <p>O CantinaOnline+ é um sistema de
+                                    gerenciamento de cantinas escolares. Ele permite o
+                                    controle de vendas, estoque e
+                                    relatórios financeiros, facilitando a
+                                    administração das cantinas e melhorando
+                                    a experiência dos usuários.</p>
+                                <h2>Recursos</h2>
+                                <div class="project-language">
+                                    <div class="tooltip">
+                                        <i class="devicon-html5-plain colored"></i>
+                                        <span class="tooltip-text">HTML5</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-css3-plain colored"></i>
+                                        <span class="tooltip-text">CSS3</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        <span class="tooltip-text">JavaScript</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-php-plain colored"></i>
+                                        <span class="tooltip-text">PHP</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-mysql-plain colored"></i>
+                                        <span class="tooltip-text">SQL</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-bootstrap-plain colored"></i>
+                                        <span class="tooltip-text">Bootstrap</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-jquery-plain colored"></i>
+                                        <span class="tooltip-text">jQuery</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-vscode-plain colored"></i>
+                                        <span class="tooltip-text">VS
+                                            Code</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-mysql-plain colored"></i>
+                                        <span class="tooltip-text">MySQL</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="projects-catalog">
-                            <div id="carousel-projects">
-                                <div id="carousel-projects-container">
-                                    <figure class="carousel-project active">
-                                        <img src="https://via.placeholder.com/150x200" alt="CantinaOnline+">
-                                    </figure>
-                                    <figure class="carousel-project">
-                                        <img src="https://via.placeholder.com/150x200" alt="SAMA">
-                                    </figure>
+
+                        <!--SAMA-->
+                        <div class="project" data-project="SAMA">
+                            <figure class="project-visual">
+                                <h2>SAMA</h2>
+                                <img src="./assets/images/projects/SAMAlogo.jpg" alt="SAMA">
+                            </figure>
+                            <div class="project-text">
+                                <h2>Descrição</h2>
+                                <p>O SAMA é um sistema para envio de atestados médicos e avaliações de equipes ágeis,
+                                    ele facilita a gestão de documentos médicos e o acompanhamento do desempenho de
+                                    times, garantindo maior transparência e eficiência no processo.</p>
+                                <h2>Recursos</h2>
+                                <div class="project-language">
+                                    <div class="tooltip">
+                                        <i class="devicon-html5-plain colored"></i>
+                                        <span class="tooltip-text">HTML5</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-css3-plain colored"></i>
+                                        <span class="tooltip-text">CSS3</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        <span class="tooltip-text">JavaScript</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-python-plain colored"></i>
+                                        <span class="tooltip-text">Python</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <i class="devicon-bootstrap-plain colored"></i>
+                                        <span class="tooltip-text">Bootstrap</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <i class="devicon-flask-original colored" style="color: #ffffff;"></i>
+                                        <span class="tooltip-text">Flask</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-jquery-plain colored"></i>
+                                        <span class="tooltip-text">jQuery</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <i class="devicon-vscode-plain colored"></i>
+                                        <span class="tooltip-text">VS
+                                            Code</span>
+                                    </div>
                                 </div>
                             </div>
-                            
+                        </div>
+
+                    </div>
+
+                    <!--Catálogo-->
+                    <div id="projects-catalog">
+                        <div id="list-projects">
+
+                            <figure class="list-project active" data-project="CantinaOnline+">
+                                <img src="./assets/images/projects/CantinaOnlinelogo.png" alt="CantinaOnline+">
+                            </figure>
+                            <figure class="list-project" data-project="SAMA">
+                                <img src="./assets/images/projects/SAMAlogo.jpg" alt="SAMA">
+                            </figure>
+
+                        </div>
+
                     </div>
                 </div>
 
-                    </div>
-                </div>
-            </section>
-            <section id="skills">
-                <div id="skills-inner">
-                    <h2>Habilidades</h2>
-                    <div id="skills-content">
-                        <div class="skill-content">
-                            <h3>Linguagens</h3>
-                            <div class="icons">
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-html5-plain colored"></i>
-                                    <span class="tooltip-text">HTML5</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-css3-plain colored"></i>
-                                    <span class="tooltip-text">CSS3</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-javascript-plain colored"></i>
-                                    <span
-                                        class="tooltip-text">JavaScript</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-python-plain colored"></i>
-                                    <span class="tooltip-text">Python</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-php-plain colored"></i>
-                                    <span class="tooltip-text">PHP</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-mysql-plain colored"></i>
-                                    <span class="tooltip-text">SQL</span>
-                                </div>
+            </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div id="skills-inner">
+                <h2>Habilidades</h2>
+                <div id="skills-content">
+                    <div class="skill-content">
+                        <h3>Linguagens</h3>
+                        <div class="icons">
+                            <div class="tooltip">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span class="tooltip-text">HTML5</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span class="tooltip-text">CSS3</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span class="tooltip-text">JavaScript</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-python-plain colored"></i>
+                                <span class="tooltip-text">Python</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-php-plain colored"></i>
+                                <span class="tooltip-text">PHP</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-mysql-plain colored"></i>
+                                <span class="tooltip-text">SQL</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="skill-content">
-                            <h3>Frameworks</h3>
-                            <div class="icons">
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-flask-original colored"
-                                        style="color: #ffffff;"></i>
-                                    <span class="tooltip-text">Flask</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-bootstrap-plain colored"></i>
-                                    <span
-                                        class="tooltip-text">Bootstrap</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-jquery-plain colored"></i>
-                                    <span class="tooltip-text">jQuery</span>
-                                </div>
+                    <div class="skill-content">
+                        <h3>Frameworks</h3>
+                        <div class="icons">
+                            <div class="tooltip">
+                                <i class="devicon-flask-original colored" style="color: #ffffff;"></i>
+                                <span class="tooltip-text">Flask</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-bootstrap-plain colored"></i>
+                                <span class="tooltip-text">Bootstrap</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-jquery-plain colored"></i>
+                                <span class="tooltip-text">jQuery</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="skill-content">
-                            <h3>Ferramentas</h3>
-                            <div class="icons">
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-vscode-plain colored"></i>
-                                    <span class="tooltip-text">VS
-                                        Code</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-git-plain colored"></i>
-                                    <span class="tooltip-text">Git</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-github-original colored"
-                                        style="color: #ffffff;"></i>
-                                    <span class="tooltip-text">GitHub</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-figma-plain colored"></i>
-                                    <span class="tooltip-text">Figma</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-mysql-plain colored"></i>
-                                    <span class="tooltip-text">MySQL</span>
-                                </div>
-                                <div class="tooltip">
-                                    <i
-                                        class="devicon-sqlite-plain colored"></i>
-                                    <span class="tooltip-text">SQLite</span>
-                                </div>
+                    <div class="skill-content">
+                        <h3>Ferramentas</h3>
+                        <div class="icons">
+                            <div class="tooltip">
+                                <i class="devicon-vscode-plain colored"></i>
+                                <span class="tooltip-text">VS
+                                    Code</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-git-plain colored"></i>
+                                <span class="tooltip-text">Git</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-github-original colored" style="color: #ffffff;"></i>
+                                <span class="tooltip-text">GitHub</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-figma-plain colored"></i>
+                                <span class="tooltip-text">Figma</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-mysql-plain colored"></i>
+                                <span class="tooltip-text">MySQL</span>
+                            </div>
+                            <div class="tooltip">
+                                <i class="devicon-sqlite-plain colored"></i>
+                                <span class="tooltip-text">SQLite</span>
                             </div>
                         </div>
-                        <div class="skill-content">
-                            <h3>Competências</h3>
-                            <ul class="skills-list">
-                                <li>💬 Comunicação clara e objetiva</li>
-                                <li>🤝 Trabalho em equipe e colaboração</li>
-                                <li>🧠 Pensamento lógico e resolução de
-                                    problemas</li>
-                                <li>🗂️ Organização e responsabilidade</li>
-                                <li>🛠️ Proatividade e aprendizado
-                                    contínuo</li>
-                                <li>🧩 Adaptabilidade a novos desafios</li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
-            </section>
-            <section id="certificates">...</section>
-        </main>
-        <footer id="footer">
-            <figure id="footer-logo">
-                <img src="./assets/images/logo.svg" alt="Logo - João Paulo"
-                    class="logo">
-            </figure>
-            <div id="footer-info">
-
-                <div id="footer-links-and-text">
-                    <div id="footer-portfolio">
-                        <p>Neste portfólio, você encontrará uma seleção dos
-                            meus principais projetos, que refletem minha
-                            paixão por criar soluções inovadoras e minha
-                            busca constante por aperfeiçoamento. Cada
-                            trabalho
-                            demonstra minhas habilidades e dedicação em
-                            diversas áreas, e estou sempre em busca de novos
-                            desafios e oportunidades para expandir ainda
-                            mais minhas capacidades.</p>
-                    </div>
-                    <div id="footer-quick-links">
-                        <h4>Links Rápidos</h4>
-                        <ul>
-                            <li><a href="#home">Início</a></li>
-                            <li><a href="#about">Sobre</a></li>
-                            <li><a href="#services">Serviços</a></li>
-                            <li><a href="#projects">Projetos</a></li>
-                            <li><a href="#skills">Habilidades</a></li>
-                            <li><a
-                                    href="#certificates">Certificados</a></li>
+                    <div class="skill-content">
+                        <h3>Competências</h3>
+                        <ul class="skills-list">
+                            <li>💬 Comunicação clara e objetiva</li>
+                            <li>🤝 Trabalho em equipe e colaboração</li>
+                            <li>🧠 Pensamento lógico e resolução de
+                                problemas</li>
+                            <li>🗂️ Organização e responsabilidade</li>
+                            <li>🛠️ Proatividade e aprendizado
+                                contínuo</li>
+                            <li>🧩 Adaptabilidade a novos desafios</li>
                         </ul>
                     </div>
+
                 </div>
-                <div id="footer-contacts">
-                    <h4>Contatos</h4>
+            </div>
+        </section>
+        <section id="certificates">...</section>
+    </main>
+    <footer id="footer">
+        <figure id="footer-logo">
+            <img src="./assets/images/logo.svg" alt="Logo - João Paulo" class="logo">
+        </figure>
+        <div id="footer-info">
+
+            <div id="footer-links-and-text">
+                <div id="footer-portfolio">
+                    <p>Neste portfólio, você encontrará uma seleção dos
+                        meus principais projetos, que refletem minha
+                        paixão por criar soluções inovadoras e minha
+                        busca constante por aperfeiçoamento. Cada
+                        trabalho
+                        demonstra minhas habilidades e dedicação em
+                        diversas áreas, e estou sempre em busca de novos
+                        desafios e oportunidades para expandir ainda
+                        mais minhas capacidades.</p>
+                </div>
+                <div id="footer-quick-links">
+                    <h4>Links Rápidos</h4>
                     <ul>
-                        <li><a href="https://www.instagram.com/jopaul0_"><i
-                                    class="ri-instagram-line footer-icon"></i></a>
-                        </li>
-                        <li><a
-                                href="https://wa.me/5512992196356?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"><i
-                                    class="ri-whatsapp-line footer-icon"></i></a></li>
-                        <li><a
-                                href="https://www.linkedin.com/in/joaosantos02"><i
-                                    class="ri-linkedin-fill footer-icon"></i></a></li>
-                        <li><a href="https://github.com/jopaul0"><i
-                                    class="ri-github-fill footer-icon"></i></a></li>
-                        <li><a
-                                href="mailto:jopaulo.as8@gmail.com?subject=Assunto%20do%20e-mail&body=Conteúdo%20do%20e-mail"><i
-                                    class="ri-mail-line footer-icon"></i></a></li>
-                        <li><a
-                                href="https://discord.com/users/jaumrelinho"><i
-                                    class="ri-discord-fill footer-icon"></i></a>
-                        </li>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#certificates">Certificados</a></li>
                     </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div id="footer-contacts">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/jopaul0_"><i class="ri-instagram-line footer-icon"></i></a>
+                    </li>
+                    <li><a
+                            href="https://wa.me/5512992196356?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"><i
+                                class="ri-whatsapp-line footer-icon"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/joaosantos02"><i
+                                class="ri-linkedin-fill footer-icon"></i></a></li>
+                    <li><a href="https://github.com/jopaul0"><i class="ri-github-fill footer-icon"></i></a></li>
+                    <li><a
+                            href="mailto:jopaulo.as8@gmail.com?subject=Assunto%20do%20e-mail&body=Conteúdo%20do%20e-mail"><i
+                                class="ri-mail-line footer-icon"></i></a></li>
+                    <li><a href="https://discord.com/users/jaumrelinho"><i class="ri-discord-fill footer-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>

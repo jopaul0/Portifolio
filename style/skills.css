@@ -58,13 +58,12 @@
     }
 
 
-    .skill-content .icons {
+    .icons {
         margin-top: 0.5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         justify-items: center;
-        font-size: 4rem;
         height: 100%;
         padding: 1rem;
         align-items: center;
@@ -111,6 +110,7 @@
     .tooltip {
         position: relative;
         display: inline-block;
+        font-size: 4rem;
     }
 
     .tooltip .tooltip-text {
@@ -171,7 +171,7 @@
             font-size: 1.5rem;
         }
 
-        .skill-content .icons {
+        .icons {
             grid-template-columns: repeat(3, 1fr);
             font-size: 3rem;
             gap: 0.75rem;
@@ -240,7 +240,7 @@
             font-size: 1.25rem;
         }
 
-        .skill-content .icons {
+        .icons {
             grid-template-columns: repeat(3, 1fr);
             font-size: 2.5rem;
             gap: 0.75rem;
