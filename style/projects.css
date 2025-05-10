@@ -46,6 +46,19 @@
 
 }
 
+.project-visual a{
+    text-decoration: none;
+    
+}
+.project-visual a h2{
+    transition: all 0.3s ease;
+}
+.project-visual a:hover h2{
+    color: #ffffff !important;
+    text-shadow: #ffffff 0px 0px 10px;
+
+}
+
 .project-text {
     width: 100%;
     display: flex;
