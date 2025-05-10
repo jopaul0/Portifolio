@@ -1,6 +1,5 @@
 /* === ELEMENTO PRINCIPAL === */
 #services {
-    height: 90vh;
     padding: 5rem;
     display: flex;
     flex-wrap: wrap;

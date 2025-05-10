@@ -23,16 +23,15 @@
             40px 100%, 0% calc(100% - 40px), 0% 40px);
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 90%;
 }
 
 .carousel-container {
     clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
             100% calc(100% - 40px), calc(100% - 40px) 100%,
-            40px 100%, 0% calc(100% - 40px), 0% 40px);  
+            40px 100%, 0% calc(100% - 40px), 0% 40px);
     position: relative;
-    width: 100%;
-    max-width: 600px;
+    width: 70%;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -45,7 +44,7 @@
 .carousel img {
     width: 100%;
     flex-shrink: 0;
-    height: 300px;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -75,17 +74,73 @@
     right: 5%;
 }
 
-@media screen and (max-width: 768px) {
+/* 📱 Celulares */
+@media (max-width: 480px) {
     #certificates-inner {
+        margin: 2%;
         padding: 1rem;
     }
 
     #certificates-carousel {
-        width: 90%;
+        padding: 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .carousel-container {
+        width: 100%;
+        border-radius: 0;
     }
 
     .carousel img {
-        height: 200px;
+        height: auto;
+        max-height: 300px;
     }
-    
+
+    .nav-button {
+        font-size: 1.2rem;
+    }
+
+    .prev {
+        left: 2%;
+    }
+
+    .next {
+        right: 2%;
+    }
+}
+
+/* 📱📲 Tablets (paisagem ou retrato) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    #certificates-inner {
+        margin: 4%;
+        padding: 1.5rem;
+    }
+
+    #certificates-carousel {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .carousel-container {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .carousel img {
+        height: auto;
+        max-height: 450px;
+    }
+
+    .nav-button {
+        font-size: 1.5rem;
+    }
+
+    .prev {
+        left: 3%;
+    }
+
+    .next {
+        right: 3%;
+    }
 }

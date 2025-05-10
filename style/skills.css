@@ -1,5 +1,4 @@
     #skills-inner {
-        min-height: 80vh;
         margin: 10%;
         background-color: #ffffff;
         clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px,
