@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+    <!-- META TAGS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Paulo - Desenvolvedor Fullstack</title>
@@ -18,23 +18,24 @@
     <link rel="stylesheet" href="./style/certificates.css">
     <link rel="stylesheet" href="./style/footer.css">
 
-    <!-- Bibliotecas -->
+    <!-- BIBLIOTECAS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
-
 <body>
     <header>
+        <!--LOGO HEADER-->
         <figure id="logo-header">
             <img src="./assets/images/logo.svg" alt="Logo - João Paulo" class="logo">
         </figure>
     </header>
     <aside>
+        <!--SIDEBAR-->
         <nav id="sidebar">
             <ul>
                 <li>
                     <figure><a href="#"><img src="./assets/images/logo_white.svg" alt="Logo - João Paulo"
-                                class="logo"></a></figure>
+                                class="logo" id="logo-sidebar"></a></figure>
                 </li>
                 <li><a href="#home" class="nav-link"><i class="ri-home-line"></i>
                         <span>Início</span></a></li>
@@ -53,17 +54,20 @@
     </aside>
     <main>
         <section id="home">
+            <!--CONTAINER INTRODUTÓRIO-->
             <div id="home-inner">
                 <p>Olá, eu sou João Paulo!</p>
                 <h1>Desenvolvedor Fullstack</h1>
                 <h2>"Do terminal <span style="color: #000000;">escuro</span>
                     nasce o <span style="color: #FFFC61;">amarelo</span>"</h2>
             </div>
+            <!--IMAGEM-->
             <figure id="home-img">
                 <img src="./assets/images/me.png" alt="Imagem de João Paulo">
             </figure>
         </section>
         <section id="about">
+            <!--CONTAINER TEXTO-->
             <div class="about-inner">
                 <div>
                     <h2>Sobre <span style="color: #001C35;">mim</span></h2>
@@ -101,8 +105,8 @@
                         </p>
                     </article>
                 </div>
-
             </div>
+            <!--CONTAINER IMAGEM-->
             <div class="about-inner">
                 <figure>
                 </figure>
@@ -141,7 +145,7 @@
                 <h2>Projetos</h2>
                 <div id="projects-content">
                     <div id="project-info">
-                        <!--CantinaOnline+-->
+                        <!--CANTINAONLINE+-->
                         <div class="project active" data-project="CantinaOnline+">
                             <figure class="project-visual">
                                 <a href="https://github.com/jopaul0/CantinaOnline-TCC"><h2>CantinaOnline+</h2></a>
@@ -197,7 +201,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!--SAMA-->
                         <div class="project" data-project="SAMA">
                             <figure class="project-visual">
@@ -263,22 +266,19 @@
                         </div>
 
                     </div>
-
-                    <!--Catálogo-->
+                    <!--CATÁLOGO-->
                     <div id="projects-catalog">
                         <div id="list-projects">
 
-                            <figure class="list-project active" data-project="CantinaOnline+">
+                            <figure class="item-project active" data-project="CantinaOnline+">
                                 <img src="./assets/images/projects/CantinaOnlinelogo.png" alt="CantinaOnline+">
                             </figure>
-                            <figure class="list-project" data-project="SAMA">
+                            <figure class="item-project" data-project="SAMA">
                                 <img src="./assets/images/projects/SAMAlogo.jpg" alt="SAMA">
                             </figure>
                         </div>
-
                     </div>
                 </div>
-
             </div>
             </div>
         </section>
@@ -286,6 +286,7 @@
             <div id="skills-inner">
                 <h2>Habilidades</h2>
                 <div id="skills-content">
+                    <!--LINGUAGENS-->
                     <div class="skill-content">
                         <h3>Linguagens</h3>
                         <div class="icons">
@@ -315,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--FRAMEWORKS-->   
                     <div class="skill-content">
                         <h3>Frameworks</h3>
                         <div class="icons">
@@ -333,7 +334,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--FERRAMENTAS--> 
                     <div class="skill-content">
                         <h3>Ferramentas</h3>
                         <div class="icons">
@@ -364,6 +365,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--SOFT SKILLS--> 
                     <div class="skill-content">
                         <h3>Competências</h3>
                         <ul class="skills-list">
@@ -377,26 +379,23 @@
                             <li>🧩 Adaptabilidade a novos desafios</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </section>
         <section id="certificates">
             <div id="certificates-inner">
                 <h2>Certificados</h2>
+                <!--CARROSSEL-->
                 <div id="certificates-carousel">
-                    <div class="carousel-container" id="carouselContainer">
-                    <div class="carousel" id="carousel">
+                    <div id="carousel-container">
+                    <div id="carousel">
                         <img src="./assets/images/certificates/CertificadoGit.png">
                         <img src="./assets/images/certificates/CertificadoTrilhaPython.png">
-                        <img src="./assets/images/certificates/CertificadoFlask.png">
-                        
+                        <img src="./assets/images/certificates/CertificadoFlask.png">  
                     </div>
-
                 </div>
-                
-                    <button class="nav-button prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="nav-button next" onclick="moveSlide(1)">&#10095;</button>
+                    <button class="carousel-button" id='prev'>&#10094;</button>
+                    <button class="carousel-button" id='next'>&#10095;</button>
                 </div>
             </div>
         </section>
@@ -406,8 +405,8 @@
             <img src="./assets/images/logo.svg" alt="Logo - João Paulo" class="logo">
         </figure>
         <div id="footer-info">
-
             <div id="footer-links-and-text">
+                <!--TEXTO-->
                 <div id="footer-portfolio">
                     <p>Neste portfólio, você encontrará uma seleção dos
                         meus principais projetos, que refletem minha
@@ -419,6 +418,7 @@
                         desafios e oportunidades para expandir ainda
                         mais minhas capacidades.</p>
                 </div>
+                <!--LINKS-->
                 <div id="footer-quick-links">
                     <h4>Links Rápidos</h4>
                     <ul>
@@ -431,6 +431,7 @@
                     </ul>
                 </div>
             </div>
+            <!--CONTATOS-->
             <div id="footer-contacts">
                 <h4>Contatos</h4>
                 <ul>
@@ -451,11 +452,10 @@
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
+    <!-- SCRIPTS -->
     <script src="./script/sidebar.js"></script>
     <script src="./script/projects.js"></script>
     <script src="./script/certificates.js"></script>
 </body>
-
 </html>
+<!--Lindo, né Jeanzinho?--> 

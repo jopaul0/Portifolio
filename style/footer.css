@@ -75,7 +75,6 @@
     text-shadow: 0 0 35px #FEBD2F;
 }
 
-/* Estilo para o texto do portfólio */
 #footer-portfolio {
     flex: 1;
     display: flex;
@@ -110,7 +109,7 @@
     text-shadow: 0 0 35px #FEBD2F;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #footer {
         grid-template-columns: 1fr;

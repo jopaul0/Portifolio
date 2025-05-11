@@ -1,4 +1,30 @@
-/* Sidebar styles */
+/* LOGO */
+#logo-header {
+  height: auto;
+  width: auto;
+  margin: 2vh 0 0 2vw;
+}
+.logo {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#logo-header img {
+    width: auto;
+    height: 10vh;
+    filter: drop-shadow(0 0 2px #FEBD2F);
+}
+
+#logo-sidebar {
+    width: auto;
+    height: 25vh;
+}
+
+/* SIDEBAR */
 #sidebar {
     position: fixed;
     width: 350px;
@@ -12,28 +38,6 @@
 
 #sidebar.active {
     transform: translateX(0);
-}
-
-/*Logos*/
-#logo-header img {
-    width: auto;
-    height: 10vh;
-    filter: drop-shadow(0 0 2px #FEBD2F);
-}
-
-#sidebar ul li figure a img {
-    width: auto;
-    height: 25vh;
-
-}
-
-.logo {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.logo:hover {
-    transform: scale(1.1);
 }
 
 /*Links*/
@@ -74,7 +78,6 @@
     font-weight: 400 !important;
 }
 
-/* Sublinhado no hover */
 .nav-link::after {
     content: "";
     position: absolute;
@@ -92,7 +95,6 @@
     width: 80%;
 }
 
-/* Estilo ativo */
 .nav-link.active {
     color: #FEBD2F;
     background-color: #ffffff;
@@ -100,36 +102,16 @@
     animation: activePop 0.5s ease forwards;
 }
 
-/* Quando o link estiver ativo, o sublinhado também aparece */
 .nav-link.active::after {
     width: 80%;
     transition: width 0.5s ease;
 }
 
-/* Animação de pop-in (leve zoom + brilho suave) */
-@keyframes activePop {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0px #FEBD2F;
-    }
-
-    50% {
-        transform: scale(1.03);
-        box-shadow: 0 0 10px #FEBD2F;
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 4px #FEBD2F;
-    }
-}
-
-
-
 #sidebar ul li figure {
     text-align: center;
 }
 
+/*RESPONSIVIDADE*/
 @media (max-width: 768px) {
     .nav-link:hover::after {
         width: 0%;
@@ -168,12 +150,10 @@
         margin: 0;
         position: relative;
         flex: 1;
-        /* Para que os itens ocupem o espaço igualmente */
     }
 
     #sidebar ul li:has(figure) {
         display: none;
-        /* Esconde o logo no mobile */
     }
 
     .nav-link span {
@@ -189,15 +169,7 @@
     }
 }
 
-@keyframes sidebarFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
+/* ANIMAÇÕES */
 @keyframes sidebarSlideUp {
     from {
         transform: translateY(100%);
@@ -206,5 +178,22 @@
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes activePop {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0px #FEBD2F;
+    }
+
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 10px #FEBD2F;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 4px #FEBD2F;
     }
 }

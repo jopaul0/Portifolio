@@ -21,7 +21,6 @@ body {
   background-image: url('../assets/images/background.svg');
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
-  animation: slideIn 1s ease-out;
 }
 
 header {
@@ -41,13 +40,7 @@ section {
   overflow: hidden !important;
 }
 
-
-#logo-header {
-  height: auto;
-  width: auto;
-  margin: 2vh 0 0 2vw;
-}
-
+/* BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -72,32 +65,23 @@ section {
   box-shadow: 0 0 20px #fffc34;
 }
 
-/* === ANIMAÇÃO === */
+/* ANIMAÇÃO */
 @keyframes MainSlideIn {
   0% {
     transform: scale(0.2);
-    /* Começa pequena */
     opacity: 0;
-    /* Começa invisível */
     filter: blur(10px);
-    /* Começa desfocada */
   }
 
   50% {
     transform: scale(1.05);
-    /* Cresce um pouco */
     opacity: 0.5;
-    /* Meia opacidade */
     filter: blur(5px);
-    /* Menos desfocada */
   }
 
   100% {
     transform: scale(1);
-    /* Tamanho final */
     opacity: 1;
-    /* Totalmente visível */
     filter: blur(0);
-    /* Sem desfoque */
   }
 }

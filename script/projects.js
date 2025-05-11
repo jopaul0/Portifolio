@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    const listItems = document.querySelectorAll('.list-project');
+    const listItems = document.querySelectorAll('.item-project');
     const projectSections = document.querySelectorAll('.project');
 
     listItems.forEach(item => {

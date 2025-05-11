@@ -136,12 +136,7 @@
         opacity: 1;
     }
 
-
-
-
-
-
-    /* Para telas médias (de 800px até 1024px) */
+    /* RESPONSIVIDADE */
     @media (min-width: 800px) and (max-width: 1024px) {
         #skills-inner {
             margin: 5%;
@@ -155,7 +150,6 @@
 
         #skills-content {
             grid-template-columns: repeat(2, 1fr);
-            /* Duas colunas */
             gap: 1rem;
         }
 
@@ -182,11 +176,9 @@
             margin: 1rem 0 0 0;
             display: grid;
             grid-template-columns: 1fr;
-            /* Coluna única */
             gap: 0.5rem;
             font-size: 1rem;
             word-wrap: break-word;
-            /* Garante que o conteúdo quebre quando ultrapassar a largura */
         }
 
         .skills-list li {
@@ -195,12 +187,10 @@
             padding: 0.6rem 1rem;
             border-radius: 12px;
             width: 100%;
-            /* Garante que os itens ocuparam toda a largura disponível */
             margin: 0 auto;
             font-weight: 700;
             transition: all 0.3s ease;
             white-space: normal;
-            /* Permite que o texto quebre em várias linhas */
         }
 
         .skills-list li:hover {

@@ -1,10 +1,8 @@
-/* === ELEMENTO PRINCIPAL === */
 #home {
     height: 100vh;
     display: flex;
 }
 
-/* === CONTEÚDO PRINCIPAL === */
 #home-inner {
     position: absolute;
     width: 50vw;
@@ -44,7 +42,6 @@
     text-align: left;
 }
 
-/* === IMAGEM === */
 #home-img {
     width: 100%;
     display: flex;
@@ -59,9 +56,7 @@
     transform: translate(20vw, 30vh);
 }
 
-/* === MEDIA QUERIES === */
-
-/* Até 768px */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #home {
         height: 50vh;
@@ -94,7 +89,6 @@
     }
 }
 
-/* Até 550px */
 @media (max-width: 550px) {
     #home {
         height: 50vh;
@@ -109,7 +103,6 @@
     }
 }
 
-/* Tablets em modo retrato */
 @media (orientation: portrait) and (max-width: 1024px) {
     #home {
         flex-direction: column;
