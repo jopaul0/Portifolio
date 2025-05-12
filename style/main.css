@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #001631;
-  background-image: url('../assets/images/background.svg');
+  background-image: url('../assets/images/logos/background.svg');
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
