@@ -12,6 +12,10 @@
     font-weight: 550;
     font-size: clamp(1.8rem, 5vw, 3rem);
 }
+#projects-inner p {
+    color: #001631;
+    
+}
 
 #projects-content {
     height: 100%;
